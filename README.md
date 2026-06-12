@@ -1,112 +1,98 @@
+<!-- NOTE: the direct-download links below are version-pinned (HARBOUR-AI-1.0.134.*).
+     Bump them on every release, or they 404. -->
+
 # HARBOUR AI
 
-**100% local private AI platform for individuals and UK businesses.**  
-Your data never leaves the harbour.
+## Private AI for people who can't send their data to the cloud.
 
-[![Version](https://img.shields.io/badge/version-1.0.127-blue?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS%20soon-lightgrey?style=flat-square)](#download)
-[![License](https://img.shields.io/badge/license-proprietary-orange?style=flat-square)](https://harbour-ai.co.uk)
-[![Website](https://img.shields.io/badge/website-harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
+A complete AI workforce — five specialist agents and 120+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
----
+[![Version](https://img.shields.io/badge/version-1.0.134-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
+[![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
+[![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
 
-## What is HARBOUR AI?
-
-HARBOUR AI is a desktop application that gives individuals and UK businesses a private AI workforce — running entirely on your own machine. No cloud. No subscriptions. No data harvesting.
-
-Five specialist AI agents (EMMA, BELLA, SAPPHIRE, JADE, ELLIE) work together across **112 pre-built business modules** covering everything from contract generation and GDPR compliance to payroll, open banking, and NHS integrations.
+![HARBOUR AI — a five-agent AI workforce running entirely on your own machine](images/harbour-hero.png)
 
 ---
 
-## Key Features
+## ⬇ Download — free 14-day trial, no card
 
-- **Multi-agent orchestration** — 5 AI agents collaborate on every query
-- **100% local inference** — works with Ollama, LM Studio, or any OpenAI-compatible endpoint
-- **Company Brain** — automatic knowledge graph extracted from your conversations
-- **Meeting intelligence** — live transcription, auto-summaries, post-meeting action triggers
-- **GDPR compliance suite** — DPIA generator, Article 30 RoPA, PII redaction, ICO breach workflow
-- **CRM, HRIS, and Payroll** — including HMRC RTI submissions
-- **Open Banking** — 15 UK banks via Open Banking API
-- **NHS FHIR R4** — API-ready for clinical integrations
-- **Enterprise SSO** — SAML 2.0 and OIDC support
-- **AI Video Interviews** — automated candidate screening
-- **Client Sentiment Monitor** — weekly at-risk client detection
-- **Knowledge Decay Alerts** — flags stale knowledge before it causes problems
-- **One-time purchase** — no subscription, no usage fees, no phone-home
+| Windows | Linux | macOS |
+|:---:|:---:|:---:|
+| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.134-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.134.AppImage) | *Coming soon* |
+| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.134-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.134.deb) | |
+
+You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
 ---
 
-## Modules (112 total)
+## Why HARBOUR, not ChatGPT?
 
-| Category | Modules |
+🔒 **Your data never leaves.** Everything runs on your machine — chats, documents, everything. Nothing is sent anywhere, ever. For solicitors, accountants, clinicians, and anyone bound by GDPR or client confidentiality, that isn't a feature — it's the whole point.
+
+✅ **And you can prove it.** Every AI answer is cryptographically signed. Verify any output — or your entire audit trail — at [harbour-ai.co.uk/verify](https://harbour-ai.co.uk/verify), with no HARBOUR install needed. No cloud AI can offer this, because their business *is* your data leaving.
+
+👥 **A workforce, not a chatbot.** Five specialists — EMMA, BELLA, SAPPHIRE, JADE, ELLIE — debate and synthesise every answer, across 120+ ready-made tools built for UK business.
+
+💷 **Pay once.** £149, yours forever. No subscription, no usage fees, no phone-home.
+
+---
+
+## What's inside
+
+**Five agents working together on every query:**
+
+| Agent | Role |
 |---|---|
-| Core AI | Multi-agent chat, Company Brain, Ghost-writing, Screen Memory |
-| Compliance | GDPR full suite, Cyber Essentials prep, ISO 27001 gap analysis |
-| Legal | Contract generator, NDA builder, TUPE manager, Companies House |
-| Finance | Open Banking (15 banks), HMRC RTI payroll, invoice automation |
-| HR | HRIS, recruitment, AI video interviews, learning management |
-| Health | NHS FHIR R4 APIs, clinical pathway support |
-| Sales | CRM, client sentiment, lead scoring, proposal builder |
-| Operations | Project management, always-on monitors, knowledge decay alerts |
-| Enterprise | SSO (SAML/OIDC), audit logs, role-based access, white-label |
+| 💖 **EMMA** | Orchestrator — synthesises a final verdict across the squad |
+| 💚 **BELLA** | Code & technical |
+| 💙 **SAPPHIRE** | Research & analysis |
+| 💛 **JADE** | Creative & lateral thinking |
+| ❤️ **ELLIE** | Critic & devil's advocate |
+
+**120+ tools**, including:
+
+- 🛡 **Trust Layer** — signed AI receipts, tamper-evident audit ledger, encrypted vault, e-signature, injection firewall
+- ⚖️ **Legal** — contract drafting & review, NDA builder, conveyancing, employment law, SRA conflict checks
+- 💷 **Finance** — payroll with HMRC RTI, Open Banking (15 UK banks), MTD VAT/ITSA, invoicing, cash-flow forecasting
+- 🏥 **Healthcare** — NHS FHIR R4, CQC self-assessment, clinical decision support, GP referrals
+- 📋 **Compliance** — full GDPR suite (DPIA, RoPA, DSAR, breach response), ISO 27001, Cyber Essentials evidence
+- 👥 **HR & Sales** — HRIS, recruitment & AI video interviews, CRM, proposals, client sentiment monitoring
+- 🧭 **Sector packs** — conveyancing, insurance, recruitment, property & lettings, and more
+- 🎙 **Productivity** — live meeting transcription, document intelligence, workflow automation, Company Brain knowledge graph
+
+[See everything at harbour-ai.co.uk →](https://harbour-ai.co.uk)
 
 ---
 
-## Download
+## 🚀 Get running in 3 steps
 
-**Latest release:** [v1.0.127](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+1. **Install [Ollama](https://ollama.com)** — the free local AI engine
+2. **Download HARBOUR** for your platform (above) and launch it
+3. **It pulls a model on first run** (`llama3.1`) — then you're working, fully offline from there on
 
-| Platform | Installer | Notes |
-|---|---|---|
-| Linux | `.AppImage` | Runs without install — `chmod +x` and launch |
-| Linux | `.deb` | Debian / Ubuntu package manager |
-| Windows | `-Setup.exe` | Standard installer |
-| Windows | `-Portable.exe` | No installation required |
-| macOS | `.dmg` | Coming soon |
-
----
-
-## Requirements
-
-- **OS:** Linux (Ubuntu 20.04+, Debian 11+), Windows 10/11
-- **RAM:** 8 GB minimum, 16 GB recommended
-- **Disk:** 2 GB for application + model storage
-- **Ollama:** Required for local AI inference — [download at ollama.com](https://ollama.com)
-- **Internet:** Not required after setup (fully offline capable)
-
-### Quick start
-
-1. Download and install [Ollama](https://ollama.com)
-2. Pull a model: `ollama pull llama3.1`
-3. Download the HARBOUR AI installer for your platform
-4. Launch HARBOUR AI — Ollama is detected automatically
+> **Requirements:** Windows 10/11 or Linux (Ubuntu 20.04+ / Debian 11+) · 8 GB RAM (16 GB recommended) · ~6 GB disk for the app + model. No internet needed after setup.
 
 ---
 
 ## Pricing
 
-| Tier | Price | Users | Highlights |
-|---|---|---|---|
-| **Solo** | £149 one-time | 1 | Full platform, all 112 modules |
-| **Business** | £999 one-time | 25 | Team knowledge graph, shared Brain |
-| **Reseller** | £2,499 one-time | 50 + white-label | Rebrand and resell |
-| **Enterprise** | From £9,999 | Unlimited | Custom deployment, SLA, onboarding |
-| **HARBOUR CARE Solo** | +£59/year | — | Priority updates + support |
-| **HARBOUR CARE Business** | +£199/year | — | SLA + dedicated onboarding |
+| Tier | Price | Users |
+|---|---|---|
+| **Solo** | £149 one-time | 1 |
+| **Business** | £999 one-time | 25 — shared Company Brain, SSO, audit trail |
+| **Reseller** | £2,499 one-time | 50 white-label seats |
+| **Enterprise** | from £9,999 | Unlimited — custom deployment, SLA, onboarding |
 
-[Get started at harbour-ai.co.uk →](https://harbour-ai.co.uk)
+One-time purchase, yours forever. Optional **HARBOUR CARE** annual support: Solo £59/yr · Business £199/yr. [Full pricing →](https://harbour-ai.co.uk/#pricing)
 
 ---
 
 ## Links
 
-- **Website:** [harbour-ai.co.uk](https://harbour-ai.co.uk)
-- **User Manual:** [harbour-ai.co.uk/manual.html](https://harbour-ai.co.uk/manual.html)
-- **Pricing:** [harbour-ai.co.uk/#pricing](https://harbour-ai.co.uk/#pricing)
-- **GDPR:** [harbour-ai.co.uk/gdpr.html](https://harbour-ai.co.uk/gdpr.html)
-- **Enterprise:** [harbour-ai.co.uk/enterprise.html](https://harbour-ai.co.uk/enterprise.html)
-- **Support:** loosekeyz84@proton.me
+[Website](https://harbour-ai.co.uk) · [User Manual](https://harbour-ai.co.uk/manual.html) · [Verify a receipt](https://harbour-ai.co.uk/verify) · [GDPR & governance](https://harbour-ai.co.uk/gdpr.html) · [Enterprise](https://harbour-ai.co.uk/enterprise.html) · Support: loosekeyz84@proton.me
 
 ---
 
-*HARBOUR AI — Built by LOOSEKEY. All rights reserved.*
+*HARBOUR AI — your data never leaves the harbour.*
