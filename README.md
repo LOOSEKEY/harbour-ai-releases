@@ -89,9 +89,15 @@ One-time purchase, yours forever. Optional **HARBOUR CARE** annual support: Solo
 
 ---
 
+## For organisations — HARBOUR AI Box
+
+Don't want to install anything? The **HARBOUR AI Box** is a turnkey appliance — a mini-PC we (or a partner) pre-configure with HARBOUR AI, Ollama, and your chosen models, and ship ready to plug in. Ideal for NHS trusts, councils, and regulated organisations: connect power and ethernet, your team logs in over the local network, and nothing ever leaves the room. [Learn more →](https://harbour-ai.co.uk/appliance.html)
+
+---
+
 ## Links
 
-[Our story](STORY.md) · [Website](https://harbour-ai.co.uk) · [User Manual](https://harbour-ai.co.uk/manual.html) · [Verify a receipt](https://harbour-ai.co.uk/verify) · [GDPR & governance](https://harbour-ai.co.uk/gdpr.html) · [Enterprise](https://harbour-ai.co.uk/enterprise.html) · Support: loosekeyz84@proton.me
+[Our story](STORY.md) · [Website](https://harbour-ai.co.uk) · [Community Discord](https://discord.gg/eGtd6Wsh) · [HARBOUR AI Box](https://harbour-ai.co.uk/appliance.html) · [User Manual](https://harbour-ai.co.uk/manual.html) · [Verify a receipt](https://harbour-ai.co.uk/verify) · [GDPR & governance](https://harbour-ai.co.uk/gdpr.html) · [Enterprise](https://harbour-ai.co.uk/enterprise.html) · Support: loosekeyz84@proton.me
 
 ---
 
