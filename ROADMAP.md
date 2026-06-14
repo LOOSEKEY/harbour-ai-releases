@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.0.135** — released 14 June 2026
+Current version: **v1.0.136** — released 14 June 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.0.135** — released 14 June 2026
 
 ---
 
-## The Platform — v1.0.135
+## The Platform — v1.0.136
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -61,6 +61,10 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.0.136 — 14 June 2026
+- Reliability — fixed several panels (Companies House, charts, kiosk, team management) that could error on a brand-new install
+- Quality — added an automated test gate so every release is checked before it ships
 
 ### v1.0.135 — 14 June 2026
 - Security hardening — tightened authentication on the OpenAI-compatible API
