@@ -13,7 +13,6 @@ Current version: **v1.0.135** — released 14 June 2026
 | Windows EXE | ✅ Available |
 | Windows Portable | ✅ Available |
 | macOS DMG | 🔶 In progress — coming soon |
-| HARBOUR OS (bootable ISO) | 🔶 Built & verified — public download coming soon |
 | Flathub | 🔶 Submission pending |
 | Microsoft Store | 🔶 In progress |
 
@@ -45,7 +44,6 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ### Near term
 - macOS DMG (signed, notarised)
-- HARBOUR OS public download
 - Flathub listing
 - Microsoft Store listing
 
@@ -77,8 +75,7 @@ cloud, no telemetry, no subscription. What's in the box today:
 - First-run fix — default model now matches the install instructions
 
 ### v1.0.128 — 8 June 2026
-- HARBOUR OS — bootable Ubuntu-based ISO with HARBOUR AI + Ollama pre-loaded
-- HARBOUR Box appliance
+- HARBOUR Box — plug-in private AI appliance for UK organisations
 - Pricing: Solo £149, Business £999, Reseller £2,499, Enterprise £9,999+
 
 ### v1.0.127 — 7 June 2026
