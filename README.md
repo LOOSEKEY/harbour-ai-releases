@@ -1,4 +1,4 @@
-<!-- NOTE: the direct-download links below are version-pinned (HARBOUR-AI-1.0.136.*).
+<!-- NOTE: the direct-download links below are version-pinned (HARBOUR-AI-1.0.138.*).
      Bump them on every release, or they 404. -->
 
 # HARBOUR AI
@@ -7,7 +7,7 @@
 
 A complete AI workforce — five specialist agents and 120+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.0.136-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.0.138-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -20,8 +20,8 @@ A complete AI workforce — five specialist agents and 120+ business tools — t
 
 | Windows | Linux | macOS |
 |:---:|:---:|:---:|
-| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.136-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.136.AppImage) | *Coming soon* |
-| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.136-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.136.deb) | |
+| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.138-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.138.AppImage) | *Coming soon* |
+| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.138-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.138.deb) | |
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
@@ -51,15 +51,17 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 | 💛 **JADE** | Creative & lateral thinking |
 | ❤️ **ELLIE** | Critic & devil's advocate |
 
-**120+ tools**, including:
+**130+ tools**, including:
 
 - 🛡 **Trust Layer** — signed AI receipts, tamper-evident audit ledger, encrypted vault, e-signature, injection firewall
+- 🧠 **Self-improving intelligence** — smart model routing, semantic answer cache, self-critique, and a built-in eval harness so answers get better and faster
 - ⚖️ **Legal** — contract drafting & review, NDA builder, conveyancing, employment law, SRA conflict checks
 - 💷 **Finance** — payroll with HMRC RTI, Open Banking (15 UK banks), MTD VAT/ITSA, invoicing, cash-flow forecasting
 - 🏥 **Healthcare** — NHS FHIR R4, CQC self-assessment, clinical decision support, GP referrals
-- 📋 **Compliance** — full GDPR suite (DPIA, RoPA, DSAR, breach response), ISO 27001, Cyber Essentials evidence
+- 📋 **Compliance** — full GDPR suite (DPIA, RoPA, DSAR, breach response), ISO 27001, Cyber Essentials evidence, whistleblowing portal
 - 👥 **HR & Sales** — HRIS, recruitment & AI video interviews, CRM, proposals, client sentiment monitoring
-- 🧭 **Sector packs** — conveyancing, insurance, recruitment, property & lettings, and more
+- 🧭 **Sector packs** — conveyancing, insurance, recruitment, property & lettings, **dental, veterinary, pharmacy, opticians, construction (CDM), hospitality, logistics, manufacturing, funeral services**
+- 🛠 **Everyday tools** — slide generator, spreadsheet AI, handwriting OCR, whiteboard→notes, data lineage, auto-classification, vendor risk, board-pack/KPI commentary
 - 🎙 **Productivity** — live meeting transcription, document intelligence, workflow automation, Company Brain knowledge graph
 
 [See everything at harbour-ai.co.uk →](https://harbour-ai.co.uk)
