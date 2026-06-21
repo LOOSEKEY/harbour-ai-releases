@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.0.136** — released 14 June 2026
+Current version: **v1.0.140** — released 21 June 2026
 
 ---
 
@@ -19,12 +19,12 @@ Current version: **v1.0.136** — released 14 June 2026
 
 ---
 
-## The Platform — v1.0.136
+## The Platform — v1.0.140
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
 
-- **120+ specialist business modules** across legal, accounting, HR, healthcare, recruitment,
+- **130+ specialist business modules** across legal, accounting, HR, healthcare, recruitment,
   education and compliance
 - **Trust Layer (complete)** — cryptographic proof of what your AI did:
   - Signed AI receipts on every response — verifiable offline, in any browser
@@ -61,6 +61,20 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.0.140 — 21 June 2026
+- Stability — final stabilisation release closing out the platform build. Internal code clean-up and a startup reliability fix, with new automated checks to keep startup healthy. No change to features.
+
+### v1.0.139 — 15 June 2026
+- New — self-evolving assistant (opt-in, off by default): learns from how you work and *suggests* new agents and workflows for you to approve. It never changes itself silently.
+
+### v1.0.138 — 15 June 2026
+- Reliability — full end-to-end test of every endpoint; fixed two edge-case errors (invoice chaser and scheduling).
+
+### v1.0.137 — 15 June 2026
+- New — smarter, faster answers (automatic model routing, response caching, self-critique, built-in evaluation).
+- New — 9 more sector packs (dental, veterinary, pharmacy, opticians, construction, hospitality, logistics, manufacturing, funeral).
+- New — everyday tools (slides, spreadsheet AI, handwriting OCR, whiteboard-to-notes, data lineage, auto-classification, vendor risk, board packs) and a confidential whistleblowing portal.
 
 ### v1.0.136 — 14 June 2026
 - Reliability — fixed several panels (Companies House, charts, kiosk, team management) that could error on a brand-new install
