@@ -97,6 +97,14 @@ Don't want to install anything? The **HARBOUR AI Box** is a turnkey appliance �
 
 ---
 
+## Built, stable, and maintained for the long term
+
+HARBOUR AI is a **finished, mature product** — 130+ specialist modules, a full cryptographic trust layer, and the complete five-agent workforce, all shipped and battle-tested. It isn't a perpetual beta or a startup that might vanish next quarter.
+
+From here, development is deliberately steady: **security updates, dependency patches, and stability fixes — kept current for years.** Your one-time licence already includes every current feature *and* all future updates, so the app on your machine only gets safer and more reliable over time. Bigger directions (hardware-backed key vaults, privacy-preserving federated learning at scale, more sector packs) stay on the table for if and when there's clear demand — but the core you're buying today is complete.
+
+---
+
 ## Links
 
 [Our story](STORY.md) · [Website](https://harbour-ai.co.uk) · [Community Discord](https://discord.gg/eGtd6Wsh) · [HARBOUR AI Box](https://harbour-ai.co.uk/appliance.html) · [User Manual](https://harbour-ai.co.uk/manual.html) · [Verify a receipt](https://harbour-ai.co.uk/verify) · [GDPR & governance](https://harbour-ai.co.uk/gdpr.html) · [Enterprise](https://harbour-ai.co.uk/enterprise.html) · Support: loosekeyz84@proton.me
