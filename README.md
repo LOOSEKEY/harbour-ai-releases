@@ -5,7 +5,7 @@
 
 ## Private AI for people who can't send their data to the cloud.
 
-A complete AI workforce — five specialist agents and 120+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
+A complete AI workforce — five specialist agents and 130+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
 [![Version](https://img.shields.io/badge/version-1.0.140-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
@@ -33,7 +33,7 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 
 ✅ **And you can prove it.** Every AI answer is cryptographically signed. Verify any output — or your entire audit trail — at [harbour-ai.co.uk/verify](https://harbour-ai.co.uk/verify), with no HARBOUR install needed. No cloud AI can offer this, because their business *is* your data leaving.
 
-👥 **A workforce, not a chatbot.** Five specialists — EMMA, BELLA, SAPPHIRE, JADE, ELLIE — debate and synthesise every answer, across 120+ ready-made tools built for UK business.
+👥 **A workforce, not a chatbot.** Five specialists — EMMA, BELLA, SAPPHIRE, JADE, ELLIE — debate and synthesise every answer, across 130+ ready-made tools built for UK business.
 
 💷 **Pay once.** £149, yours forever. No subscription, no usage fees, no phone-home.
 
