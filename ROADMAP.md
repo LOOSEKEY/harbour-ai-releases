@@ -113,6 +113,6 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ---
 
-*For support or enterprise enquiries: loosekeyz84@proton.me*  
+*For support or enterprise enquiries: Gregorymoores@proton.me*  
 *Website: [harbour-ai.co.uk](https://harbour-ai.co.uk)*  
 *Community: [Discord](https://discord.gg/eGtd6Wsh)*
