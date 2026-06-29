@@ -8,7 +8,7 @@ disclosure from the community.
 
 **Please report security issues privately — do not open a public GitHub issue.**
 
-- **Email:** loosekeyz84@proton.me
+- **Email:** Gregorymoores@proton.me
 - Use the subject line `SECURITY` so it's triaged quickly.
 
 Please include, where possible:
