@@ -107,7 +107,7 @@ From here, development is deliberately steady: **security updates, dependency pa
 
 ## Links
 
-[Our story](STORY.md) · [Website](https://harbour-ai.co.uk) · [Community Discord](https://discord.gg/eGtd6Wsh) · [HARBOUR AI Box](https://harbour-ai.co.uk/appliance.html) · [User Manual](https://harbour-ai.co.uk/manual.html) · [Verify a receipt](https://harbour-ai.co.uk/verify) · [GDPR & governance](https://harbour-ai.co.uk/gdpr.html) · [Enterprise](https://harbour-ai.co.uk/enterprise.html) · Support: loosekeyz84@proton.me
+[Our story](STORY.md) · [Website](https://harbour-ai.co.uk) · [Community Discord](https://discord.gg/eGtd6Wsh) · [HARBOUR AI Box](https://harbour-ai.co.uk/appliance.html) · [User Manual](https://harbour-ai.co.uk/manual.html) · [Verify a receipt](https://harbour-ai.co.uk/verify) · [GDPR & governance](https://harbour-ai.co.uk/gdpr.html) · [Enterprise](https://harbour-ai.co.uk/enterprise.html) · Support: Gregorymoores@proton.me
 
 ---
 
