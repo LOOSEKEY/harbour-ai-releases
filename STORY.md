@@ -68,4 +68,4 @@ I hope it's as useful to you as it's been to me.
 
 *Built between him, me, and a stubborn refusal to send private data to the cloud.*
 
-[Try it free for 14 days →](https://harbour-ai.co.uk) · [Read the manual →](https://harbour-ai.co.uk/manual.html) · Questions? loosekeyz84@proton.me
+[Try it free for 14 days →](https://harbour-ai.co.uk) · [Read the manual →](https://harbour-ai.co.uk/manual.html) · Questions? Gregorymoores@proton.me
