@@ -59,9 +59,17 @@ versions do not receive backported fixes.
 - **Authentication** — token-based auth with password hashing; the API enforces auth on
   protected routes.
 - **Testing** — the platform has undergone external penetration testing and ongoing internal
-  security review, and every release must pass an automated test gate (including an
-  auth-enforcement and route-safety harness) before it can be published.
-- **Dependencies** — third-party dependencies are monitored, and we update as upstream fixes
-  become available.
+  security review. Every release must pass an automated test gate (including an
+  auth-enforcement and route-safety harness) before it can be published, and the codebase now
+  receives a **monthly security scan** — static analysis, a dependency-CVE audit, and live
+  authentication / injection / path-traversal probes run against a running instance.
+- **Dependencies** — third-party dependencies are monitored continuously and updated as
+  upstream fixes land; each monthly scan brings every dependency with an available fix up to
+  date.
+
+> **Latest review — June 2026 (v1.0.140):** monthly security scan completed with no critical
+> or high-severity issues in HARBOUR AI's own code; all runtime defences (authentication,
+> injection, and path-traversal protections) verified holding, and all dependencies with an
+> available upstream fix were updated.
 
 Thank you for helping keep HARBOUR AI and its users safe.
