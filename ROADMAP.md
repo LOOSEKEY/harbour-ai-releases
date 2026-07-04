@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.0.140** — released 21 June 2026
+Current version: **v1.0.142** — released 4 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.0.140** — released 21 June 2026
 
 ---
 
-## The Platform — v1.0.140
+## The Platform — v1.0.142
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -61,6 +61,13 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.0.142 — 4 July 2026
+- New — **ask EMMA to run the platform for you.** 41 built-in tools now let you drive HARBOUR from plain language in chat — draft a DSAR or breach response, value a business, forecast cashflow, prepare VAT/ITSA figures, translate, compare documents, check an IR35 status, look up Companies House and more, without hunting for the right panel. Every action still runs under your own login with full audit, and tools only draft and analyse — nothing is sent or filed on your behalf.
+
+### v1.0.141 — 3 July 2026
+- Improved — images EMMA finds on the web now appear **inline** in chat instead of as plain links.
+- Fixed — copy and paste restored in the desktop app (Edit menu + right-click).
 
 ### v1.0.140 — 21 June 2026
 - Stability — final stabilisation release closing out the platform build. Internal code clean-up and a startup reliability fix, with new automated checks to keep startup healthy. No change to features.
