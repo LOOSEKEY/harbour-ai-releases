@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.0.142** — released 4 July 2026
+Current version: **v1.0.143** — released 4 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.0.142** — released 4 July 2026
 
 ---
 
-## The Platform — v1.0.142
+## The Platform — v1.0.143
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -61,6 +61,9 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.0.143 — 4 July 2026
+- Improved — **honest offline/online status.** When you ask an agent whether it's offline, it answers truthfully: fully offline by default, and — on a turn where *you* switched on web search — it now says plainly that those specific results were fetched from the web over your connection. Its reasoning still runs entirely on your machine, and nothing else ever leaves your device.
 
 ### v1.0.142 — 4 July 2026
 - New — **ask EMMA to run the platform for you.** 41 built-in tools now let you drive HARBOUR from plain language in chat — draft a DSAR or breach response, value a business, forecast cashflow, prepare VAT/ITSA figures, translate, compare documents, check an IR35 status, look up Companies House and more, without hunting for the right panel. Every action still runs under your own login with full audit, and tools only draft and analyse — nothing is sent or filed on your behalf.
