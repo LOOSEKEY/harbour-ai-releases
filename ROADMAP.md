@@ -25,7 +25,7 @@ HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your ow
 cloud, no telemetry, no subscription. What's in the box today:
 
 - **130+ specialist business modules** across legal, accounting, HR, healthcare, recruitment,
-  education and compliance
+  education, planning, charity, financial services and compliance
 - **Trust Layer (complete)** — cryptographic proof of what your AI did:
   - Signed AI receipts on every response — verifiable offline, in any browser
   - Tamper-evident, hash-chained audit ledger
@@ -34,7 +34,9 @@ cloud, no telemetry, no subscription. What's in the box today:
   - Built-in e-signature, consent platform and bias auditor
   - Content credentials on generated outputs
 - **Full UK GDPR compliance suite** — DPIA, RoPA, PII redaction, ICO breach workflow
-- **Sector packs** — conveyancing, insurance, recruitment, property lettings, plus professional-services suites
+- **Sector packs** — conveyancing, insurance, recruitment, property lettings, dental, veterinary,
+  pharmacy, opticians, construction, hospitality, logistics, manufacturing and funeral services,
+  on top of the core legal, NHS, accountancy, HR and education suites
 - **Integrations** — Open Banking (15 UK banks), NHS FHIR R4, Enterprise SSO (SAML 2.0 / OIDC), MCP
 - **Productivity** — Company Brain knowledge graph, meeting intelligence, workflow recorder, voice & vision
 - **OpenAI-compatible REST API** — plug HARBOUR AI into your existing tools, all running locally
