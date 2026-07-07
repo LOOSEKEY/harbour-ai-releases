@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.0.143** — released 4 July 2026
+Current version: **v1.1.0** — released 7 July 2026
 
 ---
 
@@ -19,12 +19,12 @@ Current version: **v1.0.143** — released 4 July 2026
 
 ---
 
-## The Platform — v1.0.143
+## The Platform — v1.1.0
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
 
-- **130+ specialist business modules** across legal, accounting, HR, healthcare, recruitment,
+- **150+ specialist business modules** across legal, accounting, HR, healthcare, recruitment,
   education, planning, charity, financial services and compliance
 - **Trust Layer (complete)** — cryptographic proof of what your AI did:
   - Signed AI receipts on every response — verifiable offline, in any browser
@@ -63,6 +63,14 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.1.0 — 7 July 2026
+- **Biggest feature release since launch — ~80 new capabilities.** HARBOUR came out of maintenance mode and shipped a major update, all running entirely on your own machine.
+- **Deeper sector tools** — the professional packs now cite the actual UK rules they rely on, include real calculators (e.g. NHS dental UDA bands, BNF drug-interaction checks), chain into multi-step case workflows, and keep first-class case records linked to your Company Brain.
+- **New compliance & sovereignty suite** — one-click signed "no data left this machine" attestation for any date range; automated-decision explainability with a human-review workflow; an air-gapped edition (offline licence + USB-verified updates); and a live counter in the cockpit showing bytes sent externally (0 when fully local) with an optional kill-switch.
+- **Business intelligence** — negotiation rehearsal, synthetic test-data generation, point-in-time "what did this say on date X" knowledge, a privacy-preserving data clean room, a live business digital twin, a claim-checking truth engine, and full source provenance.
+- **Professional packs** for regulated work — safeguarding, AML/SAR, criminal defence, probate, insolvency and immigration assistants (each assists a qualified professional, never replaces them).
+- **Easier to use** — a Ctrl+K command palette to jump anywhere, an in-app help that answers "how do I…?" fully offline, first-run "fits your machine" model badges, interface scaling and more colour themes.
 
 ### v1.0.143 — 4 July 2026
 - Improved — **honest offline/online status.** When you ask an agent whether it's offline, it answers truthfully: fully offline by default, and — on a turn where *you* switched on web search — it now says plainly that those specific results were fetched from the web over your connection. Its reasoning still runs entirely on your machine, and nothing else ever leaves your device.

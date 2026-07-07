@@ -1,13 +1,13 @@
-<!-- NOTE: the direct-download links below are version-pinned (HARBOUR-AI-1.0.143.*).
+<!-- NOTE: the direct-download links below are version-pinned (HARBOUR-AI-1.1.0.*).
      Bump them on every release, or they 404. -->
 
 # HARBOUR AI
 
 ## Private AI for people who can't send their data to the cloud.
 
-A complete AI workforce — five specialist agents and 130+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
+A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.0.143-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.1.0-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -20,8 +20,8 @@ A complete AI workforce — five specialist agents and 130+ business tools — t
 
 | Windows | Linux | macOS |
 |:---:|:---:|:---:|
-| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.143-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.143.AppImage) | *Coming soon* |
-| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.143-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.0.143.deb) | |
+| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.1.0-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.1.0.AppImage) | *Coming soon* |
+| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.1.0-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.1.0.deb) | |
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
@@ -33,7 +33,7 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 
 ✅ **And you can prove it.** Every AI answer is cryptographically signed. Verify any output — or your entire audit trail — at [harbour-ai.co.uk/verify](https://harbour-ai.co.uk/verify), with no HARBOUR install needed. No cloud AI can offer this, because their business *is* your data leaving.
 
-👥 **A workforce, not a chatbot.** Five specialists — EMMA, BELLA, SAPPHIRE, JADE, ELLIE — debate and synthesise every answer, across 130+ ready-made tools built for UK business.
+👥 **A workforce, not a chatbot.** Five specialists — EMMA, BELLA, SAPPHIRE, JADE, ELLIE — debate and synthesise every answer, across 150+ ready-made tools built for UK business.
 
 💷 **Pay once.** £149, yours forever. No subscription, no usage fees, no phone-home.
 
@@ -51,7 +51,7 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 | 💛 **JADE** | Creative & lateral thinking |
 | ❤️ **ELLIE** | Critic & devil's advocate |
 
-**130+ tools**, including:
+**150+ tools**, including:
 
 - 🛡 **Trust Layer** — signed AI receipts, tamper-evident audit ledger, encrypted vault, e-signature, injection firewall
 - 🧠 **Self-improving intelligence** — smart model routing, semantic answer cache, self-critique, and a built-in eval harness so answers get better and faster
@@ -99,7 +99,7 @@ Don't want to install anything? The **HARBOUR AI Box** is a turnkey appliance �
 
 ## Built, stable, and maintained for the long term
 
-HARBOUR AI is a **finished, mature product** — 130+ specialist modules, a full cryptographic trust layer, and the complete five-agent workforce, all shipped and battle-tested. It isn't a perpetual beta or a startup that might vanish next quarter.
+HARBOUR AI is a **finished, mature product** — 150+ specialist modules, a full cryptographic trust layer, and the complete five-agent workforce, all shipped and battle-tested. It isn't a perpetual beta or a startup that might vanish next quarter.
 
 From here, development is deliberately steady: **security updates, dependency patches, and stability fixes — kept current for years.** Your one-time licence already includes every current feature *and* all future updates, so the app on your machine only gets safer and more reliable over time. Bigger directions (hardware-backed key vaults, privacy-preserving federated learning at scale, more sector packs) stay on the table for if and when there's clear demand — but the core you're buying today is complete.
 
