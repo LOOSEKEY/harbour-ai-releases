@@ -67,10 +67,12 @@ versions do not receive backported fixes.
   upstream fixes land; each monthly scan brings every dependency with an available fix up to
   date.
 
-> **Latest review — 7 July 2026 (v1.1.0):** a full security scan after the v1.1.0 feature release
-> completed with **no critical or high-severity issues** in HARBOUR AI's own code. All runtime
-> defences (authentication, admin gating, injection and path-traversal protections) were verified
-> holding, and one lower-severity network hardening was applied during the scan. Dependencies
-> remain current apart from two upstream libraries that have no fix available yet.
+> **Latest review — 13 July 2026 (v1.1.0):** the monthly security scan completed with **no critical
+> or high-severity issues** in HARBOUR AI's own code. All runtime defences (authentication, admin
+> gating, injection and path-traversal protections) were re-verified holding against a running
+> instance. **Three third-party dependencies with newly published advisories were updated to their
+> fixed versions** as part of the scan; the only dependencies not on their latest secure release are
+> two upstream libraries that have no fix available yet, neither of which is exposed to untrusted
+> input in HARBOUR.
 
 Thank you for helping keep HARBOUR AI and its users safe.
