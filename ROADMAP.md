@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.1.0** — released 7 July 2026
+Current version: **v1.1.1** — released 13 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.1.0** — released 7 July 2026
 
 ---
 
-## The Platform — v1.1.0
+## The Platform — v1.1.1
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,11 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.1.1 — 13 July 2026
+- **Security & stability update.** A full end-to-end check of the running app plus the monthly security scan. Everything from v1.1.0 stays the same — no features changed.
+- **Security** — three third-party components with newly published advisories were updated to their fixed versions, including one that removes a way a specially crafted PDF could tie up your processor while its text was being read. All the app's own protections (sign-in, admin access, injection and path-traversal defences) were re-checked against a live instance and hold.
+- **Fixes** — using web search in chat could return an error on some turns; that's fixed. The assistant's built-in tools now run reliably instead of occasionally being skipped, and EMMA's autonomous "agentic" mode now stops as soon as it has your answer instead of wandering.
 
 ### v1.1.0 — 7 July 2026
 - **Biggest feature release since launch — ~80 new capabilities.** HARBOUR came out of maintenance mode and shipped a major update, all running entirely on your own machine.
