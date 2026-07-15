@@ -1,5 +1,8 @@
-<!-- NOTE: the direct-download links below are version-pinned (HARBOUR-AI-1.2.0.*).
-     Bump them on every release, or they 404. -->
+<!-- NOTE: the direct-download links below are deliberately VERSION-LESS. CI publishes
+     byte-identical version-less aliases (HARBOUR-AI-Setup.exe, HARBOUR-AI.AppImage, …) on
+     every release, so releases/latest/download/<name> always resolves. Do NOT re-pin them
+     to a version — that's what 404'd every download link at v1.0.137 and again at v1.2.0.
+     Only the version badge below needs bumping. -->
 
 # HARBOUR AI
 
@@ -20,8 +23,8 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 
 | Windows | Linux | macOS |
 |:---:|:---:|:---:|
-| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.2.0-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.2.0.AppImage) | *Coming soon* |
-| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.2.0-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-1.2.0.deb) | |
+| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
+| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
