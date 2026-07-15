@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.1.1** — released 13 July 2026
+Current version: **v1.2.0** — released 15 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.1.1** — released 13 July 2026
 
 ---
 
-## The Platform — v1.1.1
+## The Platform — v1.2.0
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,13 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.2.0 — 15 July 2026
+- **The toolbar is fixed.** The row of toggles across the top had grown to 84 buttons on one line, with a scrollbar you had to drag sideways to reach the ones at the end. It's now **8 buttons you actually use mid-conversation**, plus two tidy menus: **☰ WORKSPACE** for the things you *do*, and **⚙ SYSTEM** for the things you *set up or govern*. The sideways scrollbar is gone.
+- **Nothing was taken away.** Every panel and tool you had is still there — now grouped under a clear heading and findable by name instead of hidden behind a drag. WORKSPACE covers Chat & Session, Knowledge, Research, Agents & Automation, Business, Meetings and Create; SYSTEM covers Models, Governance, Account, Connections and Display.
+- **The menus and Ctrl+K always agree.** Both are built from the same list, so anything you can reach in a menu you can also jump to by typing — and the two can never fall out of step as HARBOUR grows.
+- The rest of the app is unchanged, and everything from v1.1.0 and v1.1.1 carries forward.
+- *Next up: a proper night/day toggle and a set of colour palettes to pick from.*
 
 ### v1.1.1 — 13 July 2026
 - **Security & stability update.** A full end-to-end check of the running app plus the monthly security scan. Everything from v1.1.0 stays the same — no features changed.
