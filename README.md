@@ -28,6 +28,8 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
+> 🎙️ **In active development:** we're upgrading HARBOUR's in-app voice system — clearer speech, faster responses, and a more natural conversation feel. Rolling out over the next 30 days (targeting mid-August 2026), delivered automatically as an in-app update.
+
 ---
 
 ## Why HARBOUR, not ChatGPT?
