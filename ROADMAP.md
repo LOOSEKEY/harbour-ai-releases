@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.2.0** — released 15 July 2026
+Current version: **v1.3.0** — released 16 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.2.0** — released 15 July 2026
 
 ---
 
-## The Platform — v1.2.0
+## The Platform — v1.3.0
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,12 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.0 — 16 July 2026
+- **A proper night/day toggle.** HARBOUR now has a real light mode as well as dark — one click in the top bar. Day mode is a genuine light theme, not a dark theme with the colours flipped: text stays crisp and readable on light panels, and the important signals (red for errors, green for success, amber for warnings) stay exactly where you expect them.
+- **Pick your palette.** A new palette picker lets you choose the whole cockpit's colour family — **Neutral, Ocean, Teal, Amber, Rose or Violet** — separately from night/day. That replaces the old flat list of 16 themes with something that actually makes sense: choose a mood *and* a light/dark mode, independently.
+- **Your current look is safe.** If you'd already picked one of the old themes, HARBOUR maps it to the closest new palette automatically, so you reopen to the look you chose — nothing changes under you. And in night mode the app looks identical to before, down to the pixel.
+- **The colours are now consistent everywhere.** Under the hood, ~2,000 hardcoded colours were moved onto one shared system, so the whole app re-colours together — no more panels that look slightly off. Every text-and-background pairing is checked against accessibility contrast standards.
 
 ### v1.2.0 — 15 July 2026
 - **The toolbar is fixed.** The row of toggles across the top had grown to 84 buttons on one line, with a scrollbar you had to drag sideways to reach the ones at the end. It's now **8 buttons you actually use mid-conversation**, plus two tidy menus: **☰ WORKSPACE** for the things you *do*, and **⚙ SYSTEM** for the things you *set up or govern*. The sideways scrollbar is gone.
