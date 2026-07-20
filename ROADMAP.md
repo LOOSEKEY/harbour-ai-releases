@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.1** — released 20 July 2026
+Current version: **v1.3.2** — released 20 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.1** — released 20 July 2026
 
 ---
 
-## The Platform — v1.3.1
+## The Platform — v1.3.2
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,21 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.2 — 20 July 2026
+**Voice repair — and EMMA can now act on what she hears.** Live Voice (the always-on
+conversation mode) had never actually connected, and the wake-phrase button couldn't work in the
+desktop app. Both are fixed, and voice now runs tools: ask out loud and EMMA can check real system
+state and answer you, all locally — microphone, transcription, reasoning and speech never leave
+your machine.
+
+For safety, actions that change your machine (running commands, writing files) are deliberately
+**not** available by voice — speech recognition can mishear, so those stay in the chat box where
+you see the exact words first.
+
+Also fixes Deep Research reports, which were rendering with stray characters through the text.
+
+*Voice quality itself is the next step: the natural-sounding neural voice is still to come.*
 
 ### v1.3.1 — 20 July 2026
 **The data-loading patch.** Some saved data wasn't showing up in the app. Your session tabs, jobs,
