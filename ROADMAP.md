@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.0** — released 16 July 2026
+Current version: **v1.3.1** — released 20 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.0** — released 16 July 2026
 
 ---
 
-## The Platform — v1.3.0
+## The Platform — v1.3.1
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,17 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.1 — 20 July 2026
+**The data-loading patch.** Some saved data wasn't showing up in the app. Your session tabs, jobs,
+schedules, API keys and plugins were being requested without your login token attached, so they came
+back empty — most visibly, the session bar showed a single blank session instead of your real
+conversations after restarting.
+
+**Nothing was ever lost.** Everything stayed safely in your local database the whole time; the app
+just couldn't display it, and Conversation Search could always still find your history. This release
+reconnects them. Also fixes the sector recipe cards not appearing on the start screen until you
+pressed reload.
 
 ### v1.3.0 — 16 July 2026
 - **A proper night/day toggle.** HARBOUR now has a real light mode as well as dark — one click in the top bar. Day mode is a genuine light theme, not a dark theme with the colours flipped: text stays crisp and readable on light panels, and the important signals (red for errors, green for success, amber for warnings) stay exactly where you expect them.
