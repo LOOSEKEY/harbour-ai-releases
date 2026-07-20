@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.3** — released 20 July 2026
+Current version: **v1.3.4** — released 20 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.3** — released 20 July 2026
 
 ---
 
-## The Platform — v1.3.3
+## The Platform — v1.3.4
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,20 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.4 — 20 July 2026
+**Twenty buttons that quietly did nothing now work.** Creating a new session, deleting one,
+exporting a conversation, clearing chat history, creating or removing an agent, summarising a
+session, image analysis, creating and assigning jobs, creating schedules, creating or revoking API
+keys, running a backup or HDD mirror, and reloading plugins were all sending requests without your
+login attached — so they failed quietly, usually showing nothing at all.
+
+Chat itself was never affected, which is why this went unnoticed: the thing you use every day
+worked fine while the buttons around it didn't. Creating a new session was doubly broken — it also
+sent an incomplete request.
+
+Every screen in the app has now been checked against the server, one call at a time, and an
+automatic check was added so this cannot creep back in.
 
 ### v1.3.3 — 20 July 2026
 **The wake phrase now runs entirely on your machine.** Saying "hey emma" previously used your
