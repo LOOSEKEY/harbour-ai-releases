@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.2** — released 20 July 2026
+Current version: **v1.3.3** — released 20 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.2** — released 20 July 2026
 
 ---
 
-## The Platform — v1.3.2
+## The Platform — v1.3.3
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,19 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.3 — 20 July 2026
+**The wake phrase now runs entirely on your machine.** Saying "hey emma" previously used your
+browser's built-in speech recognition, which sends microphone audio to an online service. That
+isn't how HARBOUR should work, so it's gone.
+
+The wake word now uses the same local speech engine as Live Voice: your microphone, the
+transcription, the reasoning and the reply all stay on your computer. Anything you say that
+doesn't contain your wake phrase is discarded immediately — it never reaches the AI, your
+conversation history, or your disk.
+
+Because it shares the Live Voice pipeline, wake-word commands can now also *do* things and answer
+you out loud, which the old version could never do. Your wake phrase is configurable as before.
 
 ### v1.3.2 — 20 July 2026
 **Voice repair — and EMMA can now act on what she hears.** Live Voice (the always-on
