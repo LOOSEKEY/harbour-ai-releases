@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.6** — released 27 July 2026
+Current version: **v1.3.7** — released 27 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.6** — released 27 July 2026
 
 ---
 
-## The Platform — v1.3.6
+## The Platform — v1.3.7
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,24 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.7 — 27 July 2026
+**Three small bugs, fixed the same night they were found.**
+
+**The microphone button in the chat box now works.** Clicking it previously did nothing —
+silently, with no error — since a very early version of HARBOUR. It now uses the same
+local speech pipeline as Live Voice. Alongside it, a privacy fix: the speech-recognition
+engine was checking online for its own updates every time it started, even though it runs
+entirely on your machine. It no longer does.
+
+**The webcam feature could occasionally show a message from an oddly-named placeholder
+"agent" instead of a real one.** Fixed to always use a real agent.
+
+**HARBOUR could occasionally insist on the wrong date.** The "save to memory" button saves
+a reply as a fact HARBOUR remembers about you going forward. A small number of saved facts
+turned out to be old, incorrect statements about the date — which were then being trusted
+over the actual current date. HARBOUR no longer saves, or trusts, a "fact" that is really
+just a stale snapshot of the date and time.
 
 ### v1.3.6 — 27 July 2026
 **Your assistant has a real voice, and document search now works in the installed app.**
