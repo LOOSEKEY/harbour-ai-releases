@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.5-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.6-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -28,7 +28,7 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🎙️ **In active development:** we're upgrading HARBOUR's in-app voice system — clearer speech, faster responses, and a more natural conversation feel. Rolling out over the next 30 days (targeting mid-August 2026), delivered automatically as an in-app update.
+> 🎙️ **Now shipping:** HARBOUR's voice upgrade has landed in **v1.3.6**. EMMA speaks with a natural British voice that runs entirely on your own machine — no cloud service, no system packages to install, and it works offline like everything else. Delivered automatically as an in-app update.
 
 ---
 

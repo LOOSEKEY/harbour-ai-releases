@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.5** — released 27 July 2026
+Current version: **v1.3.6** — released 27 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.5** — released 27 July 2026
 
 ---
 
-## The Platform — v1.3.5
+## The Platform — v1.3.6
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,38 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.6 — 27 July 2026
+**Your assistant has a real voice, and document search now works in the installed app.**
+
+**EMMA speaks properly now.** A natural British voice, generated entirely on your own machine —
+no cloud service, nothing sent anywhere, and no extra software to install. It works offline like
+everything else, and speech is produced roughly twice as fast as it plays. If you use HARBOUR on
+Linux and had no spoken replies at all, that is why: the old voice relied on a system component
+many Linux machines do not include. The new one needs nothing.
+
+**Document search works in the installed app.** This one is worth being straight about. HARBOUR's
+document features worked when run from source, but the packaged application was missing a
+component they depend on — so uploading a document to the installed app failed. It was found by
+running the new **Self-test** panel against the published release rather than against a
+development machine, which is exactly the sort of gap it was built to catch. Uploading, searching,
+the Company Knowledge Base and Cloud Drive Sync all work now.
+
+Your existing documents are unaffected. The change was verified to produce identical results to
+the previous method before it was made, precisely so that nothing already indexed would need
+rebuilding.
+
+**Also fixed.** Installing a model from inside the app used to report success even when the
+download had failed — it now checks, and tells you what actually happened. Deleting a model never
+actually removed it, despite saying it had.
+
+**Privacy.** Two components were reaching the network without needing to: a database library with
+usage telemetry switched on by default, and the search model checking for updates on every start.
+Both are gone. The "0 bytes sent externally" meter is now literally true from a cold boot.
+
+**The download is bigger — around 640 MB, up from 320 MB.** The AI models for document search and
+speech now ship inside the installer instead of being missing or fetched later. Nothing is
+downloaded behind your back, and everything runs offline.
 
 ### v1.3.5 — 27 July 2026
 **The release that made the features already there actually work.** A full review of the codebase
