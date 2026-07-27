@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.4** — released 20 July 2026
+Current version: **v1.3.5** — released 27 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.4** — released 20 July 2026
 
 ---
 
-## The Platform — v1.3.4
+## The Platform — v1.3.5
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,48 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.5 — 27 July 2026
+**The release that made the features already there actually work.** A full review of the codebase
+asked why the last few releases had each been "a feature that never ran at all", and found the
+same cause underneath every one: the groundwork was built, and the code that was meant to use it
+never was. Nine more instances of that turned up. These are the ones you'll notice.
+
+**HARBOUR was throwing away most of what you asked it.** The setting that tells the local AI
+engine how much it may read was never actually sent, so the engine fell back to a small default
+and **discarded 52–76% of every prompt — starting from the top**, which is exactly where your
+Company Knowledge Base and your uploaded documents were placed. That is the "it ignores my
+documents" complaint, and it was real. HARBOUR now sizes this from your machine's own memory, and
+when something genuinely will not fit it trims the least important part and tells you, rather than
+letting the engine silently cut the top off.
+
+**Half of every document you uploaded could not be found by search.** Documents were being split
+into pieces larger than the search index can actually read, so roughly **38% of the text in every
+file was stored, shown to you, and never searchable**. Now none of it is lost. Search is also
+better at the things it used to be worst at — invoice numbers, clause references, case numbers,
+surnames — because it now matches exact terms alongside meaning. If you have documents indexed by
+an older version, the Documents panel will offer you a one-click **Re-index**.
+
+**Cloud Drive Sync had never indexed a single file.** If you connected OneDrive, SharePoint or
+Google Drive, it reported success every 30 minutes and did nothing at all. Fixed.
+
+**Errors are no longer silent.** When something failed, HARBOUR often showed you an empty panel
+rather than a problem, which is how several broken buttons went unnoticed for weeks. Failures now
+appear as a plain-English message and are collected in a **Problems** list you can copy and send
+us.
+
+**A new Self-test panel** (System ▸ Diagnostics) checks that each part of HARBOUR genuinely works
+on *your* machine — it indexes a real document and searches for it back, asks the model a real
+question, encrypts and decrypts a real secret — and gives you a pass/fail grid plus a support
+bundle you can read before sending. Everything stays on your machine.
+
+**Security.** This release also completes a full security review — a dependency audit, static
+analysis, and live attack testing against a running instance. Runtime defences all held. Two
+issues in HARBOUR's own code were found and fixed, the more significant being an **access-control
+fault on multi-user installations**: on an instance with more than one account, a signed-in user
+could reach data belonging to another user of the same machine. **Single-user installations were
+not affected in practice.** Dependencies with available fixes were updated at the same time. If
+you run HARBOUR with more than one account, please make sure you are on v1.3.5.
 
 ### v1.3.4 — 20 July 2026
 **Twenty buttons that quietly did nothing now work.** Creating a new session, deleting one,

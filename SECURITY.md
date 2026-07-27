@@ -67,12 +67,15 @@ versions do not receive backported fixes.
   upstream fixes land; each monthly scan brings every dependency with an available fix up to
   date.
 
-> **Latest review — 13 July 2026 (v1.1.0):** the monthly security scan completed with **no critical
-> or high-severity issues** in HARBOUR AI's own code. All runtime defences (authentication, admin
-> gating, injection and path-traversal protections) were re-verified holding against a running
-> instance. **Three third-party dependencies with newly published advisories were updated to their
-> fixed versions** as part of the scan; the only dependencies not on their latest secure release are
-> two upstream libraries that have no fix available yet, neither of which is exposed to untrusted
-> input in HARBOUR.
+> **Latest review — 27 July 2026 (v1.3.5):** a full security scan — dependency-CVE audit, static
+> analysis, a secrets sweep, and live authentication / injection / path-traversal probes against a
+> running instance. Runtime defences (token handling, admin gating, injection and path-traversal
+> protection, rate limiting) were all verified holding. **An access-control fault affecting
+> multi-user installations was found and fixed:** on an instance with more than one account, a
+> signed-in user could reach data belonging to another user of the same machine. **Single-user
+> installations were not affected in practice.** A second, smaller access-control issue was fixed
+> alongside it. **Dependencies with available fixes were updated**, including a PDF-parsing library
+> reachable from uploaded documents. All fixes ship in **v1.3.5** — please keep your installation
+> up to date; the in-app updater will pull it automatically.
 
 Thank you for helping keep HARBOUR AI and its users safe.
