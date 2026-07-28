@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.7** — released 27 July 2026
+Current version: **v1.3.9** — released 28 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.7** — released 27 July 2026
 
 ---
 
-## The Platform — v1.3.7
+## The Platform — v1.3.9
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,47 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.9 — 28 July 2026
+**The manual now matches the app — and fixing it turned up a bug that was eating chats.**
+
+The user manual had not been properly updated since v1.0.140, fifteen releases ago, and it showed.
+It still described the old 84-button toolbar that was replaced by the ☰ WORKSPACE / ⚙ SYSTEM menus
+and Ctrl+K search back in v1.2.0. Worse, around 55 sections told you to open panels that have never
+existed — an "M-SERIES panel", a "TOOLS › REDACT" menu. Those features are real and working; the way
+you reach them is to **ask EMMA in plain English**, or call them from the API. Every one of those
+sections now tells you which.
+
+Newly documented, having shipped without ever making it into the manual: the **self-test** (which
+proves each feature works on your own machine rather than just pinging it), the **problems tray**,
+the **egress meter and its kill-switch**, **signed data-residency attestation**, **day mode and the
+six colour palettes**, **UI scale**, and eleven panels including Invoices, Phone Receptionist,
+Meeting Capture, Cloud Drive Sync and Whistleblowing.
+
+**🐛 The bug.** Writing up the keyboard shortcuts meant reading the code behind them, which is how we
+found that **Ctrl+K was doing two things at once**: opening the command palette, *and* clearing the
+current chat — including deleting it from disk, with no confirmation. It only happened when your
+cursor wasn't in the message box, which is exactly why it had gone unnoticed. If you have ever had a
+conversation vanish on you, this was almost certainly why. It is fixed: Ctrl+K opens the palette and
+nothing else. Clearing a chat is the 🗑️ button beside the message box, as it always was.
+
+Checking that fix in a real browser turned up a second one: **Ctrl+/ had never focused the message
+box** in any language. Also fixed.
+
+### v1.3.8 — 28 July 2026
+**Windows, verified on real Windows.**
+
+v1.3.7's Windows installers were built by our CI but had never actually been run on a Windows
+machine — only the Linux build had. Both were installed on a clean Windows 11 machine and taken
+through the whole path: install, activate, 14-day trial, register, full cockpit.
+
+The standard installer passed end to end. The **portable build** did not, and it exposed a real
+bug: on its *first* launch it showed a fatal "HARBOUR AI Offline" error while the backend was still
+starting up perfectly normally. It now waits properly and retries before reporting any problem —
+fixed, rebuilt, and re-verified by downloading the published file and running it again.
+
+*Note for portable users:* the portable build stores its data in the same place as an installed
+copy, so the two share a database on the same machine.
 
 ### v1.3.7 — 27 July 2026
 **Three small bugs, fixed the same night they were found.**
