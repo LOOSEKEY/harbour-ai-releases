@@ -298,4 +298,4 @@ pressed reload.
 
 *For support or enterprise enquiries: Gregorymoores@proton.me*  
 *Website: [harbour-ai.co.uk](https://harbour-ai.co.uk)*  
-*Community: [Discord](https://discord.gg/eGtd6Wsh)*
+*Community: [Discord](https://harbour-ai.co.uk/discord)*
