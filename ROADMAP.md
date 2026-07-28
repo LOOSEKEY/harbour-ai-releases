@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.9** — released 28 July 2026
+Current version: **v1.3.10** — released 29 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.9** — released 28 July 2026
 
 ---
 
-## The Platform — v1.3.9
+## The Platform — v1.3.10
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,26 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.10 — 29 July 2026
+**You can drag a document straight into the chat. You could always — we just never showed you.**
+
+Dropping a file onto the chat panel has worked for a long time, but it gave you no sign it was
+possible: no highlight, no cursor change, nothing. So essentially nobody used it. (We only noticed
+because it got suggested as a *new feature to build* — by the people who wrote it.)
+
+Now, when you drag a file over the chat, the panel turns green and says **DROP TO ATTACH**, with the
+formats it accepts. Let go and it's attached. Dragging ordinary selected text around the page won't
+trigger it — only real files.
+
+**Dropping several files at once no longer loses them quietly.** It used to attach the first and
+discard the rest without saying anything, so three dropped contracts became one with no warning.
+HARBOUR still takes one document at a time, but now tells you exactly which ones it skipped.
+
+Worth knowing: attaching beats pasting for anything long. The message box is a single-line field, so
+pasted line breaks flatten into spaces — fine for a sentence, poor for a contract or a code snippet.
+An attachment is parsed properly and keeps its structure. The manual on the website now covers all of
+this; it previously had no attachments section at all.
 
 ### v1.3.9 — 28 July 2026
 **The manual now matches the app — and fixing it turned up a bug that was eating chats.**
