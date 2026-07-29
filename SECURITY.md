@@ -77,5 +77,7 @@ versions do not receive backported fixes.
 > alongside it. **Dependencies with available fixes were updated**, including a PDF-parsing library
 > reachable from uploaded documents. All fixes ship in **v1.3.5** — please keep your installation
 > up to date; the in-app updater will pull it automatically.
+>
+> **Follow-up audit — 29 July 2026 (v1.3.12):** every real-time connection in the app (dictation, live voice, live meetings, the computer operator, and collaborative documents) was tested end to end — each one checked that it accepts a valid session and, just as importantly, that it refuses an invalid or missing one. **All six passed; no way in was found.** One usability fault was fixed alongside: a refused connection could not tell you *why* it had been refused, so an expired session looked like nothing happening.
 
 Thank you for helping keep HARBOUR AI and its users safe.
