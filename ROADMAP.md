@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.11** — released 29 July 2026
+Current version: **v1.3.12** — released 29 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.11** — released 29 July 2026
 
 ---
 
-## The Platform — v1.3.11
+## The Platform — v1.3.12
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,23 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.12 — 29 July 2026
+**When a voice feature refuses to connect, it can now tell you why.**
+
+If your session had quietly expired, clicking the dictation microphone did nothing at all — no
+message, no explanation. The app had always been *trying* to say "please log in again"; the message
+just never made it out. The refusal was being sent in a way the browser could not read, so the app
+received an unexplained failure and showed you nothing.
+
+That is fixed for every real-time feature: dictation, live voice, live meetings, the computer
+operator, and collaborative documents. When one of them turns a connection away you now get the
+actual reason.
+
+Behind it, all six of those connections were audited end to end for the first time — each one
+checked that it accepts a valid session, and equally that it refuses an invalid one. All six passed.
+We have also added automated guards so this class of fault is caught before a release rather than by
+someone clicking a button that does nothing.
 
 ### v1.3.11 — 29 July 2026
 **The message box holds more than one line now.**
