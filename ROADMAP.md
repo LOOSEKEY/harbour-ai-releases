@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.10** — released 29 July 2026
+Current version: **v1.3.11** — released 29 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.10** — released 29 July 2026
 
 ---
 
-## The Platform — v1.3.10
+## The Platform — v1.3.11
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,23 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.11 — 29 July 2026
+**The message box holds more than one line now.**
+
+Press **Shift+Enter** and you get a new line. The box grows as you type — up to about eight lines,
+then it scrolls — and shrinks back when you send. Enter still sends, as always.
+
+**Pasting keeps its shape.** Until now the message box was a single-line field, so anything you
+pasted had its line breaks quietly turned into spaces: a multi-paragraph brief arrived as one long
+run-on, and a code snippet lost its indentation. Paste now survives intact.
+
+This also quietly fixes the document scanner. When OCR hands its text to the chat, it formats it with
+blank lines between the instruction and the scanned text — and those were being stripped before the
+AI ever saw them. That handoff now arrives as intended.
+
+For long documents, attaching (📎 or drag-and-drop, see v1.3.10) is still the better route: an
+attachment is parsed properly rather than pasted in as plain text.
 
 ### v1.3.10 — 29 July 2026
 **You can drag a document straight into the chat. You could always — we just never showed you.**
