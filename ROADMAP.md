@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.12** — released 29 July 2026
+Current version: **v1.3.13** — released 30 July 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.12** — released 29 July 2026
 
 ---
 
-## The Platform — v1.3.12
+## The Platform — v1.3.13
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,32 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.13 — 30 July 2026
+**Tighter limits on what an agent's tools can reach.**
+
+A customer asked a precise question: the Trust Layer includes an injection firewall, so if a prompt
+injection made an agent try to call a tool with harmful arguments, what actually stops it?
+
+The honest answer is that the firewall is not the thing that stops it. The firewall reads untrusted
+content — web results, scraped pages, your documents — and strips hidden instructions before the
+model ever sees them, which makes a harmful call less likely to be produced in the first place. What
+actually *stops* one is the tools themselves refusing to trust whoever called them: only registered
+tools run, only the arguments a tool declares are passed to it, terminal commands never go through a
+shell and must be on a fixed list of read-only utilities, file access is confined to permitted
+folders, and network fetches refuse private addresses.
+
+Answering that question properly meant re-reading that code rather than the feature list, and it
+turned up gaps worth closing. Folder confinement is now enforced however a path is written — including
+paths relative to your home folder, and paths that reach outward through a shortcut — and a few
+allowed commands that could be persuaded to start *other* programs no longer can.
+
+Nothing you could do before has been taken away: reading and searching your own documents through an
+agent works exactly as it did.
+
+Two things worth stating plainly. This confines the agent within your own user account — it is not a
+sandbox escape barrier, and the container image is the answer if you need isolation at that level.
+And if you are running v1.3.13 or later you have the fix; auto-update will bring it to you.
 
 ### v1.3.12 — 29 July 2026
 **When a voice feature refuses to connect, it can now tell you why.**
