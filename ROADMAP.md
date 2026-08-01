@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.13** — released 30 July 2026
+Current version: **v1.3.14** — released 1 August 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.13** — released 30 July 2026
 
 ---
 
-## The Platform — v1.3.13
+## The Platform — v1.3.14
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,29 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.14 — 1 August 2026
+**HARBOUR now works even when another program is using its port.**
+
+HARBOUR's engine runs on your own machine and, until now, insisted on one specific port: 8000. That
+is a popular port — local web servers, developer tools and Docker containers commonly take it — so on
+a machine where something already had it, HARBOUR's engine could not start at all.
+
+There was a worse version of that. The app assumed anything answering on that port was its own engine,
+without checking. So if another program was sitting there, HARBOUR would load *that program's* page
+inside the HARBOUR window. To be clear about what this was and was not: both programs were already
+running on your own computer, nothing was sent anywhere and nothing left your machine. But a window
+with our name on it should never show you someone else's application, and it will not again.
+
+Three changes. The engine now looks for a free port instead of giving up. The app checks that whatever
+answers really is HARBOUR before it loads anything, and if it is not, it refuses and tells you what is
+in the way rather than showing it to you. And the app no longer has a port written into it anywhere,
+so it is correct wherever the engine ends up.
+
+One side effect worth knowing: if HARBOUR does end up on a different port, your saved sign-in does not
+follow it, so you will be asked to log in again and your theme returns to the default.
+
+If you are running v1.3.14 or later you have this; auto-update will bring it to you.
 
 ### v1.3.13 — 30 July 2026
 **Tighter limits on what an agent's tools can reach.**
