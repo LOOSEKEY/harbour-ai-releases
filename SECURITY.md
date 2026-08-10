@@ -67,7 +67,7 @@ versions do not receive backported fixes.
   upstream fixes land; each monthly scan brings every dependency with an available fix up to
   date.
 
-> **Latest review — 27 July 2026 (v1.3.5):** a full security scan — dependency-CVE audit, static
+> **Earlier review — 27 July 2026 (v1.3.5):** a full security scan — dependency-CVE audit, static
 > analysis, a secrets sweep, and live authentication / injection / path-traversal probes against a
 > running instance. Runtime defences (token handling, admin gating, injection and path-traversal
 > protection, rate limiting) were all verified holding. **An access-control fault affecting
@@ -79,5 +79,21 @@ versions do not receive backported fixes.
 > up to date; the in-app updater will pull it automatically.
 >
 > **Follow-up audit — 29 July 2026 (v1.3.12):** every real-time connection in the app (dictation, live voice, live meetings, the computer operator, and collaborative documents) was tested end to end — each one checked that it accepts a valid session and, just as importantly, that it refuses an invalid or missing one. **All six passed; no way in was found.** One usability fault was fixed alongside: a refused connection could not tell you *why* it had been refused, so an expired session looked like nothing happening.
+
+> **Latest review — 10 August 2026 (v1.3.15):** our monthly review, covering dependency CVEs, a
+> secrets sweep, and live probes against a running instance. Runtime defences were re-tested and
+> verified holding: agent tool confinement (every escape attempt from the July review was re-run and
+> refused), sign-in token handling, local-only network binding, and the guarantee that nothing is sent
+> externally — measured at **zero bytes** across a full document-indexing cycle. **An access-control
+> fault affecting multi-user installations was found and fixed:** the real-time collaboration
+> connection confirmed who a user was, but did not confirm that the session they asked for was theirs,
+> so on an instance with more than one account a signed-in user could join another user's live session.
+> **Single-user installations were not affected** — there is no second account, and the connection is
+> reachable only from your own machine. It concerned live traffic only, not stored history. Our July
+> follow-up had tested these connections for whether they accept a valid sign-in and refuse an invalid
+> one, which they did; this review asked the further question of whether they also check ownership of
+> what was requested, and added an automated guard so future real-time features cannot skip it. A
+> PDF-parsing library was also updated. All fixes ship in **v1.3.15** — please keep your installation
+> up to date; the in-app updater will pull it automatically.
 
 Thank you for helping keep HARBOUR AI and its users safe.

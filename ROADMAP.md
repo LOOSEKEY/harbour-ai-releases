@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.14** — released 1 August 2026
+Current version: **v1.3.15** — released 10 August 2026
 
 ---
 
@@ -19,7 +19,7 @@ Current version: **v1.3.14** — released 1 August 2026
 
 ---
 
-## The Platform — v1.3.14
+## The Platform — v1.3.15
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,38 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.15 — 10 August 2026
+**A fix for shared installations: live collaboration sessions are now properly private.**
+
+This came out of our monthly security review rather than a customer report.
+
+HARBOUR has a real-time collaboration feature: open a session and other people working in it see who
+is present and what is being said as it happens. The part that checks *who you are* worked correctly.
+The part that should have checked *whether the session you asked for is actually yours* was missing.
+On an installation with more than one account, that meant a signed-in user who named someone else's
+session could join it — seeing who was in it and the messages passing through it while they were
+connected, and able to send messages into it.
+
+**If you are the only account on your HARBOUR, this did not affect you.** There is no second user to
+be a stranger, and nothing here is reachable from outside your machine — HARBOUR's engine only listens
+locally. Nothing was sent anywhere and nothing left your machine. This also only ever concerned live
+traffic while connected: it was not a way to read stored conversation history, which has been properly
+separated per user since v1.3.5.
+
+Our July review tested every real-time connection for whether it accepts a valid sign-in and refuses
+an invalid one, and all of them passed — that part was sound. This review asked the next question:
+having established who someone is, does the connection also check that what they asked for belongs to
+them? That question had not been asked of these connections before, and for this one the answer was
+no. Ownership is now checked by the same single piece of logic the rest of the app already used, and
+we have added an automated guard that fails the build if a future real-time feature is added without
+that check.
+
+Also in this release: an update to the library HARBOUR uses to read PDFs, closing two reported issues
+where a deliberately malformed PDF could consume excessive memory or time while its text was being
+extracted.
+
+If you are running v1.3.15 or later you have this; auto-update will bring it to you.
 
 ### v1.3.14 — 1 August 2026
 **HARBOUR now works even when another program is using its port.**
