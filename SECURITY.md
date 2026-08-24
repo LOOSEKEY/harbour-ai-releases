@@ -65,7 +65,7 @@ versions do not receive backported fixes.
   authentication / injection / path-traversal probes run against a running instance.
 - **Dependencies** — third-party dependencies are monitored continuously and updated as
   upstream fixes land; each monthly scan brings every dependency with an available fix up to
-  date.
+  date. **Most recent scan: 24 August 2026.**
 
 > **Earlier review — 27 July 2026 (v1.3.5):** a full security scan — dependency-CVE audit, static
 > analysis, a secrets sweep, and live authentication / injection / path-traversal probes against a
@@ -80,7 +80,7 @@ versions do not receive backported fixes.
 >
 > **Follow-up audit — 29 July 2026 (v1.3.12):** every real-time connection in the app (dictation, live voice, live meetings, the computer operator, and collaborative documents) was tested end to end — each one checked that it accepts a valid session and, just as importantly, that it refuses an invalid or missing one. **All six passed; no way in was found.** One usability fault was fixed alongside: a refused connection could not tell you *why* it had been refused, so an expired session looked like nothing happening.
 
-> **Latest review — 10 August 2026 (v1.3.15):** our monthly review, covering dependency CVEs, a
+> **Earlier review — 10 August 2026 (v1.3.15):** our monthly review, covering dependency CVEs, a
 > secrets sweep, and live probes against a running instance. Runtime defences were re-tested and
 > verified holding: agent tool confinement (every escape attempt from the July review was re-run and
 > refused), sign-in token handling, local-only network binding, and the guarantee that nothing is sent
@@ -95,5 +95,39 @@ versions do not receive backported fixes.
 > what was requested, and added an automated guard so future real-time features cannot skip it. A
 > PDF-parsing library was also updated. All fixes ship in **v1.3.15** — please keep your installation
 > up to date; the in-app updater will pull it automatically.
+
+> **Latest review — 24 August 2026 (v1.3.16 / v1.3.17):** our monthly review. Runtime defences were
+> re-tested and verified holding: agent tool confinement (all nine escape attempts from the July
+> review re-run and refused), sign-in token handling against tampered and forged tokens, local-only
+> network binding, every real-time connection, and the guarantee that nothing is sent externally —
+> measured again at **zero bytes**, this time across a full document index *and* search.
+>
+> This review looked at the parts of the system that run on a schedule in the background, which
+> earlier reviews had covered less systematically than the parts you click. **An access-control fault
+> affecting multi-user installations was found and fixed:** where a user had not set up their own
+> Companies House API key, the software fell back to looking for a shared one — but every stored key
+> belongs to an individual account, so it could return another user's key and make lookups against
+> their allowance. **Single-user installations were not affected** — there is no second account for it
+> to find.
+>
+> **We also removed something that was not a vulnerability, because we would rather it simply did not
+> exist.** Scheduled report emails contained code to send results through a third-party email service.
+> It could never run in any released version — it required a setting we have never shipped, and we
+> confirmed **no customer data has ever been sent through it** — but a privacy promise should not
+> depend on a setting staying switched off, and the interface wrongly suggested you could turn it on.
+> Report emails now go through **your own mail server** and nowhere else, and an automated check now
+> fails our build if any third-party email service is ever referenced again.
+>
+> Separately, five email features (the daily briefing, board pack, health digest, candidate
+> acknowledgements and invoice chasing) had never been able to send at all — they were reading your
+> mail settings from the wrong place and failing silently while reporting themselves as configured.
+> That is a reliability fault rather than a security one, but it is fixed in the same release and
+> those features now tell you when something is wrong instead of failing quietly.
+>
+> All fixes ship in **v1.3.17** — please keep your installation up to date; the in-app updater will
+> pull it automatically. ⚠️ **v1.3.16 and v1.3.17 are Linux-only releases.** The Windows installer
+> remains v1.3.15 and is unaffected by both faults in a single-user installation; a Windows build
+> follows shortly, and Windows auto-update correctly offers nothing in the meantime.
+
 
 Thank you for helping keep HARBOUR AI and its users safe.
