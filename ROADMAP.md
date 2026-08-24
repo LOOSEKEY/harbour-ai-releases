@@ -1,6 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.15** — released 10 August 2026
+Current version: **v1.3.17** — released 24 August 2026
+*(Linux; the Windows installer is currently v1.3.15 — a Windows build of v1.3.17 follows shortly)*
 
 ---
 
@@ -10,8 +11,8 @@ Current version: **v1.3.15** — released 10 August 2026
 |---|---|
 | Linux AppImage | ✅ Available |
 | Linux .deb | ✅ Available |
-| Windows EXE | ✅ Available |
-| Windows Portable | ✅ Available |
+| Windows EXE | ✅ Available — currently v1.3.15 |
+| Windows Portable | ✅ Available — currently v1.3.15 |
 | HARBOUR AI Box (appliance) | ✅ Available — pre-configured on hardware; HARBOUR OS installer on request |
 | macOS DMG | 🔶 In progress — coming soon |
 | Flathub | 🔶 Submission pending |
@@ -19,7 +20,7 @@ Current version: **v1.3.15** — released 10 August 2026
 
 ---
 
-## The Platform — v1.3.15
+## The Platform — v1.3.17
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +64,50 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.17 — 24 August 2026
+**Report emails now go through your own mail server. Nothing else.**
+
+While reviewing the code that sends scheduled reports, we found it contained a path to send them via a
+third-party email service. **It could never have run in any version you have ever installed** — it
+required a setting we have never shipped and have never set — and we verified that no customer data
+has ever gone through it.
+
+We removed it anyway, and we want to be plain about why. A promise that your data stays on your
+machine should not rest on a setting staying switched off. Worse, the interface actively suggested you
+could switch it on, which is the opposite of how we want to treat a decision about your data. Report
+emails now go through **your own mail server**, configured by you, and nowhere else. If you have not
+set one up, HARBOUR tells you so rather than quietly finding another route.
+
+We have also added an automated check that fails our build if any third-party email service is ever
+referenced in the code again, so this cannot come back by accident.
+
+### v1.3.16 — 24 August 2026
+**A shared-installation fix, and five email features that had never worked.**
+
+From our monthly security review, which this month looked at the parts of HARBOUR that run on a
+schedule in the background rather than the parts you click.
+
+**The access-control fix.** If you had not set up your own Companies House API key, HARBOUR would fall
+back to looking for a shared one. But every stored key belongs to an individual account, so on an
+installation with more than one account that fallback could return **another user's key** — showing
+part of it, and making lookups that counted against their allowance. **If you are the only account on
+your HARBOUR, this did not affect you**; there is no second account for it to find. The fallback is
+gone: a key belongs to the person who entered it.
+
+**The five features that had never sent an email.** The daily briefing, the monthly board pack, the
+weekly health digest, candidate acknowledgements and invoice chasing all send email. None of them
+could. They were reading your mail settings from the wrong place, finding nothing, and stopping
+without saying so — while the settings screen reported itself as configured. This had been true since
+those features shipped.
+
+They work now. Just as importantly, they no longer fail silently: if mail cannot be sent, HARBOUR says
+so in its log rather than pretending it succeeded. If you had given up on these features, it is worth
+setting your mail details again under Settings → Integrations → Email.
+
+⚠️ **v1.3.16 and v1.3.17 are Linux-only releases.** The Windows installer remains v1.3.15 and is not
+affected by either fault on a single-user installation. Windows auto-update correctly offers nothing
+for now, and a Windows build follows shortly.
 
 ### v1.3.15 — 10 August 2026
 **A fix for shared installations: live collaboration sessions are now properly private.**
