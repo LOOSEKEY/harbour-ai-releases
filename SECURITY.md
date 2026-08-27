@@ -129,5 +129,38 @@ versions do not receive backported fixes.
 > remains v1.3.15 and is unaffected by both faults in a single-user installation; a Windows build
 > follows shortly, and Windows auto-update correctly offers nothing in the meantime.
 
+> **Latest review — 27 August 2026 (v1.3.18):** an unscheduled review of sign-in and account
+> handling, prompted by a question about how logins work rather than by any customer report. **No
+> evidence of misuse was found, and nothing here requires any action from you.** Four faults were
+> fixed:
+>
+> **Removing an administrator's rights did not take effect immediately.** The permission check read
+> the rights recorded in the user's sign-in token, valid for seven days, instead of reading their
+> account. An administrator who had been demoted — or whose account had been disabled — therefore
+> kept administrative access until that token expired. This affected every installation, including
+> single-user ones, though it required someone to have held admin rights in the first place. The
+> check now reads the account directly.
+>
+> **Two-factor codes could be guessed at without limit.** The screen that accepts the six-digit code
+> had no attempt limit, unlike the password screen beside it. It now does, counted per account so
+> that changing network address does not reset it. Account creation and directory sign-in gained the
+> same protection.
+>
+> **Self-registration was switched on by default and never closed.** On a personal machine this only
+> matters to someone already sitting at it, because HARBOUR listens only to that computer. On a
+> networked or server installation it meant anyone who could reach the address could create an
+> account. New installations now close registration once the first account exists. ⚠️ **Existing
+> installations are deliberately left exactly as they were** — we will not change how your team signs
+> in underneath you.
+>
+> **And administrators could not create accounts at all.** There was no such function; the only route
+> to an account was for the person to register themselves. This one is a reliability fault rather
+> than a security one, but it mattered most where security was tightest: in appliance mode, with
+> self-registration off, no second account could ever be added. **Admin → Users → ADD A USER** now
+> exists. If this has affected your deployment, please contact us and we will help.
+>
+> All fixes ship in **v1.3.18**. ⚠️ Linux-only; the Windows installer remains v1.3.15 and Windows
+> auto-update correctly offers nothing in the meantime.
+
 
 Thank you for helping keep HARBOUR AI and its users safe.
