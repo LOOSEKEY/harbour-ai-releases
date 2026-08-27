@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.17** — released 24 August 2026
-*(Linux; the Windows installer is currently v1.3.15 — a Windows build of v1.3.17 follows shortly)*
+Current version: **v1.3.18** — released 27 August 2026
+*(Linux; the Windows installer is currently v1.3.15 — a Windows build follows shortly)*
 
 ---
 
@@ -20,7 +20,7 @@ Current version: **v1.3.17** — released 24 August 2026
 
 ---
 
-## The Platform — v1.3.17
+## The Platform — v1.3.18
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -65,6 +65,36 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ## Changelog
 
+### v1.3.18 — 27 August 2026
+**The front door.** Four fixes to how HARBOUR handles sign-in and accounts, all found by our own
+review of the code rather than by any report from a customer.
+
+**Removing someone's admin rights now takes effect immediately.** Previously the check read the
+permissions recorded in your sign-in token, which is valid for seven days — so an administrator who
+had been demoted, or whose account had been disabled, kept their access until that token expired.
+The check now reads your account directly, so a change applies on the very next action.
+
+**Two-factor codes can no longer be guessed at indefinitely.** The six-digit code screen had no
+limit on attempts. It does now, counted per account so that changing network address does not reset
+it. Account creation and directory sign-in are limited in the same way.
+
+**On a new installation, self-registration closes once the first account exists.** Until now the
+REGISTER button stayed available forever, which is reasonable on a personal laptop but not on a
+server anyone can reach. ⚠️ **Existing installations are unaffected** — if self-registration was
+open for your team, it stays open, and nothing about how you add people changes.
+
+**Administrators can now create accounts directly**, at **Admin → Users → ADD A USER**. This was
+genuinely missing: there had been no way to add someone without them registering themselves. If you
+run HARBOUR in appliance mode, where self-registration is switched off, this is the change that
+makes additional accounts possible — we are sorry it took this long.
+
+Also fixed: on the sign-in screen, the "Sign in with work account" button for organisations using
+single sign-on was never displayed, because the setting that controls it was only ever read *after*
+signing in.
+
+⚠️ **v1.3.18 is a Linux-only release.** The Windows installer remains v1.3.15 and Windows
+auto-update correctly offers nothing for now; a Windows build follows shortly.
+
 ### v1.3.17 — 24 August 2026
 **Report emails now go through your own mail server. Nothing else.**
 
@@ -105,9 +135,8 @@ They work now. Just as importantly, they no longer fail silently: if mail cannot
 so in its log rather than pretending it succeeded. If you had given up on these features, it is worth
 setting your mail details again under Settings → Integrations → Email.
 
-⚠️ **v1.3.16 and v1.3.17 are Linux-only releases.** The Windows installer remains v1.3.15 and is not
-affected by either fault on a single-user installation. Windows auto-update correctly offers nothing
-for now, and a Windows build follows shortly.
+⚠️ **v1.3.16, v1.3.17 and v1.3.18 are Linux-only releases.** The Windows installer remains v1.3.15.
+Windows auto-update correctly offers nothing for now, and a Windows build follows shortly.
 
 ### v1.3.15 — 10 August 2026
 **A fix for shared installations: live collaboration sessions are now properly private.**
