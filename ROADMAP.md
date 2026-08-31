@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.18** — released 27 August 2026
-*(Linux; the Windows installer is currently v1.3.15 — a Windows build follows shortly)*
+Current version: **v1.3.19** — released 31 August 2026
+*(Windows and Linux, shipping together again)*
 
 ---
 
@@ -11,8 +11,8 @@ Current version: **v1.3.18** — released 27 August 2026
 |---|---|
 | Linux AppImage | ✅ Available |
 | Linux .deb | ✅ Available |
-| Windows EXE | ✅ Available — currently v1.3.15 |
-| Windows Portable | ✅ Available — currently v1.3.15 |
+| Windows EXE | ✅ Available |
+| Windows Portable | ✅ Available |
 | HARBOUR AI Box (appliance) | ✅ Available — pre-configured on hardware; HARBOUR OS installer on request |
 | macOS DMG | 🔶 In progress — coming soon |
 | Flathub | 🔶 Submission pending |
@@ -20,7 +20,7 @@ Current version: **v1.3.18** — released 27 August 2026
 
 ---
 
-## The Platform — v1.3.18
+## The Platform — v1.3.19
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -65,6 +65,22 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ## Changelog
 
+### v1.3.19 — 31 August 2026
+**The runtime that was never shipped.** HARBOUR's backend relies on a Microsoft system component —
+the Visual C++ runtime — and our Windows installer never actually installed it. Most Windows
+machines already have it, because a great many programs put it there, which is why this went
+unnoticed for so long. On a machine that did not have it, HARBOUR did not start at all.
+
+Three things changed. The installer now installs that component if it is missing. The application
+also carries its own copy, which is what makes the **portable** version work on a machine you are
+not allowed to install anything on. And a fault that made the whole backend stop has been contained,
+so a missing component now costs you dictation rather than the entire product.
+
+**If HARBOUR has ever failed to start for you on Windows, this is the release that fixes it.**
+
+This also brings Windows back into step with Linux for the first time since v1.3.15, so Windows
+users receive everything from v1.3.16, v1.3.17 and v1.3.18 in one update.
+
 ### v1.3.18 — 27 August 2026
 **The front door.** Four fixes to how HARBOUR handles sign-in and accounts, all found by our own
 review of the code rather than by any report from a customer.
@@ -92,8 +108,7 @@ Also fixed: on the sign-in screen, the "Sign in with work account" button for or
 single sign-on was never displayed, because the setting that controls it was only ever read *after*
 signing in.
 
-⚠️ **v1.3.18 is a Linux-only release.** The Windows installer remains v1.3.15 and Windows
-auto-update correctly offers nothing for now; a Windows build follows shortly.
+⚠️ **v1.3.18 was a Linux-only release.** Windows caught up in v1.3.19 on 31 August 2026.
 
 ### v1.3.17 — 24 August 2026
 **Report emails now go through your own mail server. Nothing else.**
@@ -135,8 +150,8 @@ They work now. Just as importantly, they no longer fail silently: if mail cannot
 so in its log rather than pretending it succeeded. If you had given up on these features, it is worth
 setting your mail details again under Settings → Integrations → Email.
 
-⚠️ **v1.3.16, v1.3.17 and v1.3.18 are Linux-only releases.** The Windows installer remains v1.3.15.
-Windows auto-update correctly offers nothing for now, and a Windows build follows shortly.
+⚠️ **v1.3.16, v1.3.17 and v1.3.18 were Linux-only releases.** The Windows installer stayed at
+v1.3.15 throughout. **Windows caught up in v1.3.19 on 31 August 2026**, which delivers all three.
 
 ### v1.3.15 — 10 August 2026
 **A fix for shared installations: live collaboration sessions are now properly private.**

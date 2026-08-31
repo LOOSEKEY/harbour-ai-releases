@@ -125,9 +125,9 @@ versions do not receive backported fixes.
 > those features now tell you when something is wrong instead of failing quietly.
 >
 > All fixes ship in **v1.3.17** — please keep your installation up to date; the in-app updater will
-> pull it automatically. ⚠️ **v1.3.16 and v1.3.17 are Linux-only releases.** The Windows installer
-> remains v1.3.15 and is unaffected by both faults in a single-user installation; a Windows build
-> follows shortly, and Windows auto-update correctly offers nothing in the meantime.
+> pull it automatically. ⚠️ **v1.3.16 and v1.3.17 were Linux-only releases.** The Windows installer
+> stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
+> up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
 > **Latest review — 27 August 2026 (v1.3.18):** an unscheduled review of sign-in and account
 > handling, prompted by a question about how logins work rather than by any customer report. **No
@@ -159,8 +159,8 @@ versions do not receive backported fixes.
 > self-registration off, no second account could ever be added. **Admin → Users → ADD A USER** now
 > exists. If this has affected your deployment, please contact us and we will help.
 >
-> All fixes ship in **v1.3.18**. ⚠️ Linux-only; the Windows installer remains v1.3.15 and Windows
-> auto-update correctly offers nothing in the meantime.
+> All fixes ship in **v1.3.18**. ⚠️ Linux-only at the time; the Windows installer stayed at v1.3.15.
+> **Windows caught up in v1.3.19 on 31 August 2026** and now carries all of these fixes.
 
 
 Thank you for helping keep HARBOUR AI and its users safe.

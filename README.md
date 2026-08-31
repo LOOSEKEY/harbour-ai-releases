@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.18-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.19-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
-> ℹ️ **v1.3.18 is a Linux-only release.** The Windows installer above remains **v1.3.15** and is unchanged — the download link works as normal and Windows in-app update correctly offers nothing. A Windows build will follow.
+> ✅ **v1.3.19 ships on Windows and Linux together.** The Windows installer is up to date again for the first time since v1.3.15 — if you are on Windows, this is the release to take.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🔐 **Now shipping — v1.3.18, the front door.** Four authentication fixes. The admin gate now checks the database instead of a week-old login token, so removing someone's admin rights takes effect immediately rather than whenever their token expires. Guessing at two-factor codes is now rate-limited. And on a new installation, self-registration closes once the first account exists — with a new **Admin → Users** panel where administrators can add people directly. **Existing installations are unaffected:** if self-registration was open for your team, it stays open. Delivered automatically as an in-app update.
+> 🪟 **Now shipping — v1.3.19.** HARBOUR's backend needs a Microsoft system component (the Visual C++ runtime) that our Windows installer never actually installed. Most Windows machines already have it, because many programs install it — but on a machine that did not, HARBOUR would not start at all. The installer now provides it, and the app also carries its own copy, so the portable version works on a locked-down machine too. **If HARBOUR has ever failed to start for you on Windows, this is the fix.** This release also brings Windows level with Linux again, and includes everything from v1.3.16, v1.3.17 and v1.3.18 — the Resend removal, the settings-store fixes, and the four sign-in and account fixes. Delivered automatically as an in-app update.
 
 ---
 
