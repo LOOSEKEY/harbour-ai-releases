@@ -96,7 +96,7 @@ versions do not receive backported fixes.
 > PDF-parsing library was also updated. All fixes ship in **v1.3.15** — please keep your installation
 > up to date; the in-app updater will pull it automatically.
 
-> **Latest review — 24 August 2026 (v1.3.16 / v1.3.17):** our monthly review. Runtime defences were
+> **Previous review — 24 August 2026 (v1.3.16 / v1.3.17):** our monthly review. Runtime defences were
 > re-tested and verified holding: agent tool confinement (all nine escape attempts from the July
 > review re-run and refused), sign-in token handling against tampered and forged tokens, local-only
 > network binding, every real-time connection, and the guarantee that nothing is sent externally —
@@ -129,7 +129,33 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest review — 27 August 2026 (v1.3.18):** an unscheduled review of sign-in and account
+> **Latest review — 4 September 2026 (v1.3.20):** three findings, all fixed in this release.
+> **No evidence of misuse was found.** One of them needs an action from you.
+>
+> **Your backups were not being kept.** HARBOUR wrote them to a temporary system folder — a
+> location most operating systems clear when the machine restarts, and which on many Linux
+> systems is held in memory rather than on disk. The backup was created, reported as
+> successful and listed in the app; it simply did not survive a reboot. Nothing was exposed
+> and no data was sent anywhere, but a backup you were relying on may not exist.
+> **⚠️ Please take a fresh backup after updating.** Backups now sit beside your data, run
+> automatically every night, and can be restored from within HARBOUR.
+>
+> **A locked-out administrator had no way back in.** Administrator rights could only ever be
+> granted to the first account created on an installation, and no route could grant them
+> again. A forgotten administrator password therefore removed every administrative feature
+> from your own machine, permanently, with your data intact but unreachable. There is now a
+> local recovery path — a single-use code HARBOUR writes into your data folder, usable only
+> from the machine HARBOUR runs on and never transmitted — and the last remaining
+> administrator can no longer be removed by accident.
+>
+> **Email addresses were never checked.** Any text containing an "@" was accepted at sign-up.
+> Addresses are now validated, and confirmed by email where you have configured a mail
+> server. Where you have not — the normal case for a desktop installation — nothing changes,
+> and existing accounts are unaffected.
+>
+> All three ship in **v1.3.20** on Windows and Linux together, delivered as an in-app update.
+
+> **Previous review — 27 August 2026 (v1.3.18):** an unscheduled review of sign-in and account
 > handling, prompted by a question about how logins work rather than by any customer report. **No
 > evidence of misuse was found, and nothing here requires any action from you.** Four faults were
 > fixed:

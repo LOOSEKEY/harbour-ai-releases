@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.19** — released 31 August 2026
-*(Windows and Linux, shipping together again)*
+Current version: **v1.3.20** — released 4 September 2026
+*(Windows and Linux, built locally, shipping together)*
 
 ---
 
@@ -20,7 +20,7 @@ Current version: **v1.3.19** — released 31 August 2026
 
 ---
 
-## The Platform — v1.3.19
+## The Platform — v1.3.20
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -64,6 +64,36 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.20 — 4 September 2026
+
+**Recovery, and the tools that were never reachable.**
+
+- **Backups were being written to a temporary folder.** In every built installer the backup
+  location resolved to a system temp directory — cleared on restart on most machines, and held
+  in RAM on many — so a backup could be gone before you needed it, while the app reported
+  success and listed the file. Nothing ever ran a backup automatically either, and there was no
+  restore at all. Backups now live beside your data, run nightly, are taken through SQLite's
+  online backup API so a snapshot made while you work is consistent, and **can be restored** —
+  administrator-only, refusing any backup that fails an integrity check and taking a safety copy
+  of your current database first.
+  ⚠️ *If you are updating from an earlier build, take a fresh backup — older ones have most
+  likely gone.*
+- **A locked-out administrator can get back in.** Administrator could previously be granted only
+  to the first account ever created and never again, so a forgotten password permanently removed
+  every admin feature from your own machine. The role can now be granted, the last administrator
+  cannot be removed by accident, and there is a local recovery path: a single-use code written
+  into your HARBOUR data folder, usable only from the machine HARBOUR runs on, expiring in 15
+  minutes and never sent anywhere. See the manual, *If you are locked out*.
+- **Email addresses are validated**, and confirmed by email where you have SMTP configured. If
+  you have no mail server — normal for a desktop install — nothing changes and nothing blocks.
+  Existing accounts are unaffected.
+- **35 sector tools that appeared but never worked.** Every dental, veterinary and pharmacy tool
+  past the first four opened a form, accepted input and failed with "Generation failed" — Yellow
+  Card reports, emergency supply documentation, controlled-drugs records, sedation consent,
+  safeguarding notes. All now work.
+
+Test suite 469 → 508. Built locally on both platforms.
 
 ### v1.3.19 — 31 August 2026
 **The runtime that was never shipped.** HARBOUR's backend relies on a Microsoft system component —

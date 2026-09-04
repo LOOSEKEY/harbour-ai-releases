@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
-> ✅ **v1.3.19 ships on Windows and Linux together.** The Windows installer is up to date again for the first time since v1.3.15 — if you are on Windows, this is the release to take.
+> ✅ **v1.3.20 ships on Windows and Linux together**, both built without CI.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🪟 **Now shipping — v1.3.19.** HARBOUR's backend needs a Microsoft system component (the Visual C++ runtime) that our Windows installer never actually installed. Most Windows machines already have it, because many programs install it — but on a machine that did not, HARBOUR would not start at all. The installer now provides it, and the app also carries its own copy, so the portable version works on a locked-down machine too. **If HARBOUR has ever failed to start for you on Windows, this is the fix.** This release also brings Windows level with Linux again, and includes everything from v1.3.16, v1.3.17 and v1.3.18 — the Resend removal, the settings-store fixes, and the four sign-in and account fixes. Delivered automatically as an in-app update.
+> 🛟 **Now shipping — v1.3.20.** Three things worth knowing. **Your backups were not being kept.** They were written to a temporary folder that most systems clear when you restart, so a backup could be gone before you needed it — while HARBOUR reported success and listed the file. Backups now sit beside your data, run every night, and **can be restored**. *If you are updating, take a fresh backup — older ones have most likely gone.* **A locked-out administrator can now get back in**, using a single-use code HARBOUR writes into your own data folder, on the machine it runs on, with no internet involved — there was previously no way back at all. And **35 tools in the dental, veterinary and pharmacy packs** that appeared in the app but failed whenever you used them now work. Delivered automatically as an in-app update.
 
 ---
 
