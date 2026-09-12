@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.20** — released 4 September 2026
+Current version: **v1.3.21** — released 12 September 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.20** — released 4 September 2026
 
 ---
 
-## The Platform — v1.3.20
+## The Platform — v1.3.21
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -64,6 +64,42 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.21 — 12 September 2026
+
+**The buttons that were pressing back.**
+
+Every place the interface calls the engine was tested against a running copy, as a logged-in user.
+Three features turned out to be wired to nothing at all.
+
+- 🗂 **The Company Knowledge Base had not worked since 22 May.** You could open it, add a document
+  and see no error — and nothing was ever stored. The part of HARBOUR that receives the upload had
+  been removed during an internal reorganisation and never put back, and because a failed upload
+  looks exactly like an empty knowledge base, it went unnoticed for nearly four months.
+  ⚠️ *If you added documents during that time they were not kept. Please add them again.*
+  Per-agent knowledge bases were never affected.
+- ☁️ **"Disconnect" on a cloud drive did not disconnect.** The drive vanished from the screen while
+  the server kept its access to your account, and a reload brought the connection back. It now
+  genuinely revokes access. For a product built on your data staying where you put it, that one
+  mattered most.
+- 🔑 **A cloud AI provider key pasted during first-run setup was silently discarded.** If you set one
+  up and it never seemed to take, that is why. It is saved properly now, encrypted, and tells you if
+  it cannot be. **Claude can also now be chosen as the provider for all agents**, which was
+  documented but not actually accepted by the app.
+- ⚖️ **Data Subject Access Requests failed on every attempt** — a GDPR tool with a statutory 30-day
+  deadline. Fixed, along with eighteen related faults that were failing *silently*, the worst of
+  which meant **AI Director board packs were being written from none of your actual figures**.
+- 📸 Webcam and pasted-image analysis, reseller key generation and tenant invites all work again.
+
+**Security.** EMMA monitors have always been private to the user who created them; the alerts those
+monitors *produce* were not. On an installation with more than one account, any user could read
+another's alerts — including the summary of whatever file or page the monitor was watching — and
+mark or delete them. Found in our own monthly review, proven with two ordinary accounts, and fixed
+the same day; existing alerts are kept and returned to their owners on update. Nothing was ever
+reachable from another machine. Separately, **a password reset now ends sessions opened with the old
+password**, which previously survived for up to seven days.
+
+The PDF parser that reads your uploaded documents is updated for three security advisories.
 
 ### v1.3.20 — 4 September 2026
 
