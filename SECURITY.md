@@ -129,7 +129,20 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest review — 4 September 2026 (v1.3.20):** three findings, all fixed in this release.
+> **Latest review — 12 September 2026 (v1.3.21):** one isolation finding, fixed the same day.
+> **EMMA monitor alerts carried no owner.** The monitors themselves have always been private to the
+> user who created them, but the alerts they *produce* were not: on an installation with more than
+> one account, any user could read another's alerts — which include the summary of whatever file or
+> web page the monitor was watching — and could mark them read or delete them. Found in our own
+> monthly review rather than reported, proven with two ordinary accounts, and fixed the same day.
+> Existing alerts are kept and returned to their owners when you update. The engine listens only on
+> `127.0.0.1`, so there was never a path to this from another machine or over a network.
+> Also in this release: **a password reset now ends sessions opened with the old password** (they
+> previously survived up to seven days), and the PDF parser that reads uploaded documents is updated
+> for three advisories. Separately, a Data Subject Access Request tool that failed on every attempt
+> was repaired — not a disclosure risk, but a compliance feature that could not be used.
+>
+> **Previous review — 4 September 2026 (v1.3.20):** three findings, all fixed in that release.
 > **No evidence of misuse was found.** One of them needs an action from you.
 >
 > **Your backups were not being kept.** HARBOUR wrote them to a temporary system folder — a
