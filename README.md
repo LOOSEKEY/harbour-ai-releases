@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.21-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.22-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
-> ✅ **v1.3.21 ships on Windows and Linux together**, both built without CI.
+> ✅ **v1.3.22 ships on Windows and Linux together**, both built without CI.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🔍 **Now shipping — v1.3.21.** We pressed every button in HARBOUR, one at a time, and several of them turned out to be doing nothing. **The Company Knowledge Base had not worked since May** — you could open it, add a document and get no error, and nothing was ever stored. It works now. **The cloud-drive "disconnect" button did not disconnect**: it cleared the drive from the screen while the server quietly kept its access to your account, so reconnecting was never really necessary — and that is not how a product built on keeping your data in one place should behave. It now genuinely revokes access. **If you pasted a cloud AI provider key during first-run setup, it was thrown away** without telling you; if a key of yours never seemed to take, that is why, and you can set it again now. Also fixed: the data subject access request tool failed on every request, and AI Director board packs were being written from none of your actual figures. **One security fix:** on an installation with more than one account, EMMA monitor alerts could be read and deleted by other users on that machine — monitors themselves were always private, the alerts they produced were not. Nothing was ever reachable from another computer. Delivered automatically as an in-app update.
+> 🔧 **Now shipping — v1.3.22.** **You can scroll the chat while agents are replying** — it used to pull you back to the bottom on every word, so you had to wait for every agent to finish before reading back. **EMMA's web search switch now works**; it had never taken effect. When the search engines refuse a search, which the free ones often do, the reply now **says so and names the engine**, instead of the agent claiming it isn't connected to the internet. An admin can add a **Brave Search** key for dependable results. **Agents can show you pictures from the web** — ask for pictures with web search on and up to six appear under the reply, each linked to its source, fetched by HARBOUR itself so they count on the "sent externally" meter. Also fixed: EMMA was judging your *previous* question, replies could occasionally drop a word, and research discarded its top result. Delivered automatically as an in-app update.
 
 ---
 
