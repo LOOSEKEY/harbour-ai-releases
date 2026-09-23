@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.21** — released 12 September 2026
+Current version: **v1.3.22** — released 23 September 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.21** — released 12 September 2026
 
 ---
 
-## The Platform — v1.3.21
+## The Platform — v1.3.22
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -64,6 +64,26 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.22 — 23 September 2026
+
+**Scrolling, EMMA's web switch, and search that says when it fails.**
+
+- 📜 **You can scroll the chat while agents are replying.** It used to move to the bottom on every
+  streamed word. Now it stays where you put it, with a **↓ Latest** button to jump back.
+- 🌐 **EMMA's WEB_SEARCH switch works.** The setting was being discarded on the way in, so EMMA had
+  never searched, and she was judging your *previous* question rather than the one you just asked.
+- 🤖 **No more "I'm not connected to the internet" with web search on.** Free search engines often
+  answer automated searches with a CAPTCHA; HARBOUR used to treat that as being offline. The reply now
+  says the search was tried and which engine refused. Admins can add a **Brave Search** key under
+  Admin → WEB-SEARCH for dependable results, and test which provider is answering.
+- 🖼 **Pictures from the web.** With web search on, ask for pictures and up to six appear under the
+  reply, each linking to its source. HARBOUR fetches them itself, so they count on the "sent
+  externally" meter and obey the kill-switch. "Near me" uses the town you've saved with `/remember`.
+- 🐛 Replies could occasionally drop a word; research discarded its top result; regenerate searched
+  with old results; Ctrl+K opened the wrong panel for "admin"; BELLA answered essays with code.
+- 📖 **Correction:** the manual said research with SearXNG is "fully offline". It is not — SearXNG
+  passes searches on to public engines, and HARBOUR's meter cannot see those onward requests.
 
 ### v1.3.21 — 12 September 2026
 
