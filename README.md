@@ -63,8 +63,8 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 - 🛡 **Trust Layer** — signed AI receipts, tamper-evident audit ledger, encrypted vault, e-signature, injection firewall
 - 🧠 **Self-improving intelligence** — smart model routing, semantic answer cache, self-critique, and a built-in eval harness so answers get better and faster
 - ⚖️ **Legal** — contract drafting & review, NDA builder, conveyancing, employment law, SRA conflict checks
-- 💷 **Finance** — payroll with HMRC RTI, Open Banking (15 UK banks), MTD VAT/ITSA, invoicing, cash-flow forecasting
-- 🏥 **Healthcare** — NHS FHIR R4, CQC self-assessment, clinical decision support, GP referrals
+- 💷 **Finance** — payroll with HMRC RTI calculations, bank transaction analysis, MTD VAT/ITSA, invoicing, cash-flow forecasting
+- 🏥 **Healthcare** — NHS FHIR R4 records (local), CQC self-assessment, clinical decision support, GP referrals
 - 📋 **Compliance** — full GDPR suite (DPIA, RoPA, DSAR, breach response), ISO 27001, Cyber Essentials evidence, whistleblowing portal
 - 👥 **HR & Sales** — HRIS, recruitment & AI video interviews, CRM, proposals, client sentiment monitoring
 - 🧭 **Sector packs** — conveyancing, insurance, recruitment, property & lettings, **dental, veterinary, pharmacy, opticians, construction (CDM), hospitality, logistics, manufacturing, funeral services**

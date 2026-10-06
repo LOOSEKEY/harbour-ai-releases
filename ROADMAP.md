@@ -13,9 +13,9 @@ Current version: **v1.3.22** — released 23 September 2026
 | Linux .deb | ✅ Available |
 | Windows EXE | ✅ Available |
 | Windows Portable | ✅ Available |
-| HARBOUR AI Box (appliance) | ✅ Available — pre-configured on hardware; HARBOUR OS installer on request |
-| macOS DMG | 🔶 In progress — coming soon |
-| Flathub | 🔶 Submission pending |
+| HARBOUR AI Box (appliance) | 🔶 Pilot — x86-64 installer exists, needs internet during install, not yet shipped to a customer |
+| macOS DMG | ⏳ Planned — needs Apple code-signing; no date |
+| Flathub | ❌ Dropped (1 Oct 2026) |
 | Microsoft Store | 🔶 In progress |
 
 ---
@@ -38,7 +38,7 @@ cloud, no telemetry, no subscription. What's in the box today:
 - **Sector packs** — conveyancing, insurance, recruitment, property lettings, dental, veterinary,
   pharmacy, opticians, construction, hospitality, logistics, manufacturing and funeral services,
   on top of the core legal, NHS, accountancy, HR and education suites
-- **Integrations** — Open Banking (15 UK banks), NHS FHIR R4, Enterprise SSO (SAML 2.0 / OIDC), MCP
+- **Integrations** — Xero / QuickBooks / Sage, HMRC MTD, Cloud Drive Sync (OneDrive, SharePoint, Google Drive), Enterprise SSO (LDAP + SAML 2.0), MCP. Bank transaction analysis and NHS FHIR records work on local data; neither connects to banks or NHS systems
 - **Productivity** — Company Brain knowledge graph, meeting intelligence, workflow recorder, voice & vision
 - **OpenAI-compatible REST API** — plug HARBOUR AI into your existing tools, all running locally
 - **Deployment options** — install on your own Windows/Linux machines, or run it as the **HARBOUR AI Box**: a turnkey appliance (HARBOUR OS, Ubuntu-based) we or a partner pre-configure and ship to your organisation — ideal for NHS and other regulated environments. Self-install HARBOUR OS image available to IT teams on request.
@@ -49,7 +49,6 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ### Near term
 - macOS DMG (signed, notarised)
-- Flathub listing
 - Microsoft Store listing
 
 ### Medium term
