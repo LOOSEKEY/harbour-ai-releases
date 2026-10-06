@@ -58,8 +58,7 @@ versions do not receive backported fixes.
   local vault; a prompt-injection firewall and output guardrails sit in front of the model.
 - **Authentication** — token-based auth with password hashing; the API enforces auth on
   protected routes.
-- **Testing** — the platform has undergone external penetration testing and ongoing internal
-  security review. Every release must pass an automated test gate (including an
+- **Testing** — the platform receives ongoing internal security review. Every release must pass an automated test gate (including an
   auth-enforcement and route-safety harness) before it can be published, and the codebase now
   receives a **monthly security scan** — static analysis, a dependency-CVE audit, and live
   authentication / injection / path-traversal probes run against a running instance.
