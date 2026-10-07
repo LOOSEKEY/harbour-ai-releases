@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.23-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.24-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
-> ✅ **v1.3.23 ships on Windows and Linux together**, both built without CI.
+> ✅ **v1.3.24 ships on Windows and Linux together**, both built without CI.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🔐 **Now shipping — v1.3.23, a security fix.** On installs running at **Enterprise** tier, SAML single sign-on did not check that a sign-in had really been signed by your identity provider when no certificate was configured, which was the default, so a forged sign-in could have been accepted for any account. It now refuses any sign-in it cannot verify, and checks expiry, audience and replay too. **Solo and Business were never affected, and no Enterprise licence has been sold.** If you use SAML, paste your identity provider's signing certificate into ⚙ Admin → SSO. Previously, v1.3.22: scroll the chat while agents reply, EMMA's web search switch, and pictures from the web. Delivered automatically as an in-app update.
+> 🔍 **Now shipping — v1.3.24.** **OCR works on Windows after a normal Tesseract install.** The Windows Tesseract installer doesn't add itself to your PATH, and HARBOUR only looked there, so if you followed the manual it still said Tesseract wasn't installed and couldn't read scanned PDFs. It now finds Tesseract in its install folder. Previously, v1.3.23: a security fix to SAML single sign-on (Enterprise only; Solo and Business never affected). Delivered automatically as an in-app update.
 
 ---
 
