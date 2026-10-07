@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.22** — released 23 September 2026
+Current version: **v1.3.23** — released 7 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.22** — released 23 September 2026
 
 ---
 
-## The Platform — v1.3.22
+## The Platform — v1.3.23
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,19 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.23 — 7 October 2026
+
+**SAML sign-in checks who the identity provider vouched for.** A security release with one fix.
+
+- 🔐 **On installs running at Enterprise tier, SAML sign-in could be forged.** With no identity-provider
+  certificate configured (the default), the response's signature was never checked, so a forged sign-in
+  could be accepted for any account, an administrator's included. With a certificate, the identity was
+  read from outside the signed part, and expiry, audience and replay were not checked. All of it now
+  fails closed. **Solo and Business were never affected, and no Enterprise licence has been sold.**
+- ⚠️ **If you use SAML:** paste your identity provider's signing certificate into ⚙ Admin → SSO.
+  Without one, SAML sign-in is refused, and the refusal says why.
+- 📝 SAML and LDAP sign-ins are now written to the tamper-evident audit trail.
 
 ### v1.3.22 — 23 September 2026
 
