@@ -42,7 +42,7 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 
 👥 **A workforce, not a chatbot.** Five specialists — EMMA, BELLA, SAPPHIRE, JADE, ELLIE — debate and synthesise every answer, across 150+ ready-made tools built for UK business.
 
-💷 **Pay once.** £149, yours forever. No subscription, no usage fees, no phone-home.
+💷 **Pay once.** £149, yours forever. No subscription, no usage fees, no telemetry.
 
 ---
 
@@ -90,11 +90,13 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 | Tier | Price | Users |
 |---|---|---|
 | **Solo** | £149 one-time | 1 |
-| **Business** | £999 one-time | 25 — shared Company Brain, SSO, audit trail |
+| **Business** | £999 one-time | 25 — shared Company Brain, admin dashboard, audit trail |
 | **Reseller** | £2,499 one-time | 50 white-label seats |
-| **Enterprise** | from £9,999 | Unlimited — custom deployment, SLA, onboarding |
+| **Enterprise** | from £9,999 | Unlimited — SSO (Active Directory / SAML), custom deployment, SLA, onboarding |
 
 One-time purchase, yours forever. Optional **HARBOUR CARE** annual support: Solo £59/yr · Business £199/yr. [Full pricing →](https://harbour-ai.co.uk/#pricing)
+
+Reselling? White-label packs: 10 deployments £999 · 25 £1,999 · 50 £2,499. **Building HARBOUR into your own branded hardware?** Appliance partners get a bespoke agreement — [get in touch](mailto:Gregorymoores@proton.me).
 
 ---
 
