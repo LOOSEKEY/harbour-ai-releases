@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.23** — released 7 October 2026
+Current version: **v1.3.24** — released 7 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.23** — released 7 October 2026
 
 ---
 
-## The Platform — v1.3.23
+## The Platform — v1.3.24
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,16 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.24 — 7 October 2026
+
+**OCR on Windows finds Tesseract where its installer puts it.**
+
+- 🔍 **Scanned PDFs, photographed documents and invoice images can be read on Windows after a normal
+  Tesseract install.** The installer the manual links to puts Tesseract in `C:\Program Files\Tesseract-OCR`
+  and doesn't add it to PATH; HARBOUR only looked on PATH, so it said Tesseract wasn't installed. It now
+  looks in the installer's folders too, and `TESSERACT_CMD` can name any other location.
+- 🐳 The Docker image is ~3 GB instead of 10.5 GB, includes Tesseract, and builds for ARM64.
 
 ### v1.3.23 — 7 October 2026
 
