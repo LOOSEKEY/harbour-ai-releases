@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.25** — released 9 October 2026
+Current version: **v1.3.26** — released 9 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.25** — released 9 October 2026
 
 ---
 
-## The Platform — v1.3.25
+## The Platform — v1.3.26
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,16 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.26 — 9 October 2026
+
+**The Meeting Assistant works in installed copies, plus a privacy fix and a voice fix.** All found while recording the new onboarding videos.
+
+- 🎙 **The Meeting Assistant could not transcribe in any installed copy.** A file the speech library needs was left out of the installer; it worked only from source. Included now, and the self-test checks for it.
+- 🔒 **Privacy:** loading the speech model asked huggingface.co for its version number. Nothing you said or wrote was sent, but it was an outside connection HARBOUR promises not to make. It no longer happens.
+- 🔇 **Spoken replies dropped sentences** in the Isabella, Michael and Sarah voices (about one in ten). Every sentence is spoken now.
+- The rate, pin and save buttons no longer cover the start of an answer.
+- **Admin → Users** can make someone an administrator and reset a password, as the manual describes.
 
 ### v1.3.25 — 9 October 2026
 

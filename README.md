@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.25-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.26-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
-> ✅ **v1.3.25 ships on Windows and Linux together**, both built without CI.
+> ✅ **v1.3.26 ships on Windows and Linux together**, both built without CI.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 💾 **Now shipping — v1.3.25.** **Backups that can rebuild HARBOUR on a new computer, with no internet.** A backup is now the whole installation: conversations, documents, the search index, the licence and the keys to saved logins. Encrypt it with a passphrase you keep, have it copied to a USB drive or network share automatically, and restore it onto a replacement machine from the very first screen. Also: choose where updates come from (or switch them off), a setup step that asks about your firm, a [support policy](SUPPORT.md) and a [partner handbook](https://harbour-ai.co.uk/partner-handbook.html). Previously, v1.3.24: OCR works on Windows after a normal Tesseract install.
+> 🎙 **Now shipping — v1.3.26.** **The Meeting Assistant works in installed copies** (a file it needs had been left out of the installer), the speech model no longer contacts huggingface.co when it loads, and spoken replies no longer drop sentences. Admins can now make a second administrator and reset passwords from Admin → Users. Previously, v1.3.25: backups that rebuild HARBOUR on a new computer, with no internet.
 
 ---
 
