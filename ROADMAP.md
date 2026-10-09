@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.24** — released 7 October 2026
+Current version: **v1.3.25** — released 9 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.24** — released 7 October 2026
 
 ---
 
-## The Platform — v1.3.24
+## The Platform — v1.3.25
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,38 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.25 — 9 October 2026
+
+**Backups that can rebuild HARBOUR on a new computer, with no internet.**
+
+- 💾 **A backup is now the whole installation**: conversations, memories, settings, your documents
+  and the Knowledge Base, the search index, the licence, and the keys that unlock saved logins and
+  API keys. It used to be the database alone, so a restore onto another computer came back without
+  your documents. Take a fresh backup after updating.
+- 🔒 **Encrypted backups** with a passphrase you keep. A damaged, cut-short or altered backup is
+  refused rather than half-restored.
+- 🔁 **A second copy, automatically**, to a USB drive, a second disk or a network share, read back to
+  check it. The Backups panel says plainly if the copy failed (for example, the drive was unplugged).
+- 🖥️ **Restore onto a new or replacement computer from the first screen**, with no internet and no
+  licence key: your licence comes back with the backup. Tested with 2 GB of documents: signed in on
+  the new computer 45 seconds after first starting it, every file identical.
+- ⬆️ **Choose where updates come from**: automatically, from an update folder on your own network,
+  or never (⚙ SYSTEM → Software updates).
+- 🏢 The setup wizard asks about your firm (name, what it does, how replies should be written) and
+  takes a few first documents.
+- 📄 A [support policy](SUPPORT.md) and a [partner handbook](https://harbour-ai.co.uk/partner-handbook.html).
+
+**Fixed:**
+- The **"Forgotten the administrator password?"** link the manual described was missing from the
+  sign-in screen. It is there now.
+- The setup wizard didn't open on your first sign-in, only the next time HARBOUR started.
+- MCP servers you added were forgotten every time HARBOUR closed.
+- The desktop app's bridge to the window never loaded, so the trial-days banner, the quick-ask
+  overlay's sign-in, "Open in VS Code" and the activation window's links didn't work.
+- Support bundles came out with no log lines in them.
+- In the Docker image, documents and the search index were stored inside the container rather than
+  the data volume, and indexing needed internet the first time. Both fixed; no deployment was affected.
 
 ### v1.3.24 — 7 October 2026
 

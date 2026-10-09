@@ -19,10 +19,16 @@ Please include, where possible:
 
 ### What to expect
 
-- **Acknowledgement** within 5 business days.
-- An initial assessment and severity triage shortly after.
-- Coordinated disclosure: we'll work with you on a fix and a sensible timeline, and we're
+- Security reports are handled **any day of the year**, not only on working days.
+- Once a vulnerability is confirmed, our target is a **fixed release within 8 hours**, day
+  or night. The release notes say plainly that it is a security fix.
+- Coordinated disclosure: we'll work with you on the fix and a sensible timeline, and we're
   happy to credit you once the issue is resolved (or keep you anonymous — your choice).
+
+How the fix reaches a machine depends on its update setting (⚙ SYSTEM → Software updates):
+automatically, from an update folder on the office network, or by someone running the new
+installer. **A machine with no internet gets the fix only when someone installs it.**
+Support for everything other than security is described in [SUPPORT.md](SUPPORT.md).
 
 We ask that you give us a reasonable opportunity to fix an issue before any public
 disclosure, and that testing is done only against your own installation — never against
@@ -44,8 +50,9 @@ Out of scope:
 
 ## Supported versions
 
-Security fixes ship in the **latest release**. Please keep your installation up to date —
-the in-app auto-updater will pull the newest version, or you can download it from the
+Security fixes ship in the **latest release**. Please keep your installation up to date:
+the in-app updater pulls the newest version unless it has been switched off or pointed at a
+local update folder, or you can download it from the
 [Releases page](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest). Older
 versions do not receive backported fixes.
 
