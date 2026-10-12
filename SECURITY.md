@@ -135,7 +135,13 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest review — 12 October 2026 (v1.3.27):** one access-control finding, fixed in this release.
+> **Latest review — 12 October 2026 (v1.3.28):** one ownership finding, fixed in this release.
+> **Project time logs accepted another account's task.** The project-management API (API only, no
+> screen) recorded a time entry against any task or project it was given. It never changed the other
+> account's task and the entry could not be read back by them, but it is now refused unless the task
+> is yours. Found while fixing the same API's route order, and released the same day with a test.
+>
+> **12 October 2026 (v1.3.27):** one access-control finding, fixed in this release.
 > **Whistleblowing reports were readable by every account.** Listing reports, reading one (including
 > the reporter's account when they had not chosen anonymity) and changing its status needed only a
 > sign-in, so on an installation with more than one account any user could read every disclosure and

@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.27** — released 12 October 2026
+Current version: **v1.3.28** — released 12 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.27** — released 12 October 2026
 
 ---
 
-## The Platform — v1.3.27
+## The Platform — v1.3.28
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,14 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.28 — 12 October 2026
+
+**Two API features that never answered, and the project API stops making things up.** A small follow-up to v1.3.27; nothing on screen changes.
+
+- 🔧 **The project dashboard** (`GET /pm/projects/dashboard`) and **the scheduled compliance reports list** (`GET /compliance-reports/schedules`) always answered "not found" because a more general route answered first. Both work now, and the test suite checks every route for this.
+- 🧠 **The project health score** recorded an invented 75/Amber when the AI's reply couldn't be read; it now says the score couldn't be produced. **Status reports** work from the project's real tasks and are told not to invent.
+- 🔒 **Time can no longer be logged against a task in another account's project.**
 
 ### v1.3.27 — 12 October 2026
 
