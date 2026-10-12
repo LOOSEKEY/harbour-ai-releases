@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.26** — released 9 October 2026
+Current version: **v1.3.27** — released 12 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.26** — released 9 October 2026
 
 ---
 
-## The Platform — v1.3.26
+## The Platform — v1.3.27
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,17 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.27 — 12 October 2026
+
+**Two dozen fixes found by filming every feature, a security fix, and PowerPoint slides.**
+
+- 🔒 **Whistleblowing reports are now visible to administrators only.** Before this, anyone signed in to the same HARBOUR could open Case Handling, read every report and change its status. Please update if you use whistleblowing.
+- 🧾 **Things that never worked now do:** generating a proposal; the invoice screen (it showed every invoice blank, and its status buttons did nothing); the website receptionist (it couldn't be typed into, ignored your business details, embedded from the wrong address and saved no leads); the proposal and DPIA Word downloads and the podcast and video players; Ask the Manual; and a new assistant works straight away.
+- 🧠 **No more made-up content.** Deep Research with no web sources says so instead of writing a report; the morning briefing never invents appointments; Data Analysis works the figures out exactly before the AI explains them.
+- 📊 **New:** the Slide Generator downloads a **PowerPoint** file, speaker notes included.
+- 🛡 Monthly security updates: the libraries that check sign-ins (PyJWT) and read PDFs (pypdf), plus urllib3, anyio and fsspec.
+- The manual has been checked against the app and corrected throughout.
 
 ### v1.3.26 — 9 October 2026
 

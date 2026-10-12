@@ -135,7 +135,25 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest review — 12 September 2026 (v1.3.21):** one isolation finding, fixed the same day.
+> **Latest review — 12 October 2026 (v1.3.27):** one access-control finding, fixed in this release.
+> **Whistleblowing reports were readable by every account.** Listing reports, reading one (including
+> the reporter's account when they had not chosen anonymity) and changing its status needed only a
+> sign-in, so on an installation with more than one account any user could read every disclosure and
+> dismiss it. Found while filming our feature videos, fixed with a test that proves a staff account
+> is refused, and released the same day. Case handling is now for administrators only; reporters
+> still follow their case with their reference and access code. A sweep of every route that reads a
+> whole table found no other confidential data exposed. The engine listens only on `127.0.0.1`, so
+> this was never reachable from another machine. Also: the monthly dependency review updated the
+> libraries that verify sign-in tokens (PyJWT) and parse uploaded PDFs (pypdf), plus urllib3, anyio
+> and fsspec; the remaining advisories do not reach HARBOUR or have no fix yet.
+>
+> **6 October 2026 (v1.3.23):** on installs running at Enterprise tier, SAML sign-in could be forged
+> when no identity-provider certificate was configured, and had further signature-wrapping, expiry
+> and replay weaknesses. Found while answering a partner's security questionnaire; fixed and
+> released the next day. SAML now requires a certificate and fails closed. No Enterprise licence had
+> been sold.
+>
+> **12 September 2026 (v1.3.21):** one isolation finding, fixed the same day.
 > **EMMA monitor alerts carried no owner.** The monitors themselves have always been private to the
 > user who created them, but the alerts they *produce* were not: on an installation with more than
 > one account, any user could read another's alerts — which include the summary of whatever file or
