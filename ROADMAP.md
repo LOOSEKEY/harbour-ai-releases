@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.28** — released 12 October 2026
+Current version: **v1.3.29** — released 14 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.28** — released 12 October 2026
 
 ---
 
-## The Platform — v1.3.28
+## The Platform — v1.3.29
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,12 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.29 — 14 October 2026
+
+**Chat searches your own documents again.**
+
+- 📄 **The RAG ON button did nothing.** It lit up, but the setting never reached the chat, so documents you had uploaded in RAG / Documents were never searched when you asked a question. They are now, and the answer cites them. The Company Knowledge Base was searched on every question throughout and was not affected. Found while building a load test for partner hardware; a test now guards it.
 
 ### v1.3.28 — 12 October 2026
 

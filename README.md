@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.28-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.29-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
 
-> ✅ **v1.3.28 ships on Windows and Linux together**, both built without CI.
+> ✅ **v1.3.29 ships on Windows and Linux together**, both built without CI.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🔧 **Now shipping — v1.3.28.** A small follow-up for anyone using HARBOUR's API: the project dashboard and the scheduled compliance reports list now answer (both always said "not found"), the project health score and status reports no longer make things up, and time can't be logged against another account's task. Nothing on screen changes. Previously, v1.3.27: two dozen fixes found by filming every feature for the new video series, including a **security fix: whistleblowing reports are now visible to administrators only**. Proposals, the invoice screen, the website receptionist, Word downloads, the podcast player and Ask the Manual now work; Deep Research, the morning briefing and data analysis no longer present made-up content; and the **Slide Generator downloads a PowerPoint file**.
+> 📄 **Now shipping — v1.3.29.** Chat searches your own documents again: the **RAG ON** button in RAG / Documents lit up but never reached the chat, so the documents you uploaded there were not searched. They are now, and cited. Your Company Knowledge Base was searched all along. Previously, v1.3.28: a small follow-up for anyone using HARBOUR's API: the project dashboard and the scheduled compliance reports list now answer (both always said "not found"), the project health score and status reports no longer make things up, and time can't be logged against another account's task. Nothing on screen changes. Previously, v1.3.27: two dozen fixes found by filming every feature for the new video series, including a **security fix: whistleblowing reports are now visible to administrators only**. Proposals, the invoice screen, the website receptionist, Word downloads, the podcast player and Ask the Manual now work; Deep Research, the morning briefing and data analysis no longer present made-up content; and the **Slide Generator downloads a PowerPoint file**.
 
 ---
 
