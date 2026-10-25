@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.29** — released 14 October 2026
+Current version: **v1.3.30** — released 25 October 2026
 *(Windows and Linux, built locally, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.29** — released 14 October 2026
 
 ---
 
-## The Platform — v1.3.29
+## The Platform — v1.3.30
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,14 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.30 — 25 October 2026
+
+**Security update.**
+
+- 🔒 **The Slack / Teams bot now checks who is talking to it.** It didn't check that messages really came from Slack or Teams, so anyone who could reach the bot's address could make it post in your Slack or get answers from it through Teams. It never had access to your documents or the Company Brain, so nothing stored was exposed. It now only answers messages signed with your Slack signing secret or Teams security token. **If you use the bot, make sure the secret is saved**, or the bot stops answering after this update; the manual's Slack / Teams Bot section shows how.
+- 🖥 Links opened from the app window now only go to web and email addresses.
+- 🛡 A PDF library update, and fixes to the licence server (nothing for you to do).
 
 ### v1.3.29 — 14 October 2026
 

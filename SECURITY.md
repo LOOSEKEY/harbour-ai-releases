@@ -135,7 +135,15 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest review — 12 October 2026 (v1.3.28):** one ownership finding, fixed in this release.
+> **Latest review — 25 October 2026 (v1.3.30):** a deep security review; fixed in this release.
+> **The Slack / Teams bot accepted messages that did not come from Slack or Teams.** On an
+> installation where the bot was set up and reachable from the internet, anyone could make it post
+> in the firm's Slack, or use it through Teams. The bot has no access to documents, so no stored data
+> was exposed. Messages must now be signed with the owner's Slack signing secret or Teams security
+> token, with tests proving unsigned and wrongly signed messages are refused. Also hardened: links
+> opened from the desktop window, and several licence-server checks. Released the same day.
+>
+> **12 October 2026 (v1.3.28):** one ownership finding, fixed in this release.
 > **Project time logs accepted another account's task.** The project-management API (API only, no
 > screen) recorded a time entry against any task or project it was given. It never changed the other
 > account's task and the entry could not be read back by them, but it is now refused unless the task
