@@ -135,7 +135,12 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest review — 25 October 2026 (v1.3.30):** a deep security review; fixed in this release.
+> **Latest update — 2 November 2026 (v1.3.31):** dependency updates held back from the 25 October
+> review until each was two weeks old. **Pillow 13.0.0** fixes a heap overflow in the bundled JPEG 2000
+> decoder, which a crafted scanned PDF could reach when HARBOUR reads it; also pypdf and certifi. The
+> first macOS build ships in the same release; it is not yet signed with an Apple Developer certificate.
+>
+> **25 October 2026 (v1.3.30):** a deep security review; fixed in this release.
 > **The Slack / Teams bot accepted messages that did not come from Slack or Teams.** On an
 > installation where the bot was set up and reachable from the internet, anyone could make it post
 > in the firm's Slack, or use it through Teams. The bot has no access to documents, so no stored data

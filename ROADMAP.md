@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.30** — released 25 October 2026
-*(Windows and Linux, built locally, shipping together)*
+Current version: **v1.3.31** — released 2 November 2026
+*(Windows, Linux and macOS, shipping together)*
 
 ---
 
@@ -14,13 +14,13 @@ Current version: **v1.3.30** — released 25 October 2026
 | Windows EXE | ✅ Available |
 | Windows Portable | ✅ Available |
 | HARBOUR AI Box (appliance) | 🔶 Pilot — x86-64 installer exists, needs internet during install, not yet shipped to a customer |
-| macOS DMG | ⏳ Planned — needs Apple code-signing; no date |
+| macOS DMG | ✅ Available since v1.3.31 — Apple Silicon (M1+), macOS 14+; not yet Apple-signed (first launch: Open Anyway) |
 | Flathub | ❌ Dropped (1 Oct 2026) |
 | Microsoft Store | 🔶 In progress |
 
 ---
 
-## The Platform — v1.3.30
+## The Platform — v1.3.31
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -48,7 +48,7 @@ cloud, no telemetry, no subscription. What's in the box today:
 ## Coming Up
 
 ### Near term
-- macOS DMG (signed, notarised)
+- macOS: Apple Developer signing + notarisation (then updates install themselves on a Mac too)
 - Microsoft Store listing
 
 ### Medium term
@@ -63,6 +63,13 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.31 — 2 November 2026
+
+**HARBOUR on Mac, and a security update.**
+
+- 🍎 **macOS is here**, for Apple Silicon Macs (M1 or later) on macOS 14 Sonoma or newer. Download `HARBOUR-AI.dmg` and drag it into Applications. It isn't signed with an Apple Developer certificate yet, so the first launch needs **System Settings → Privacy & Security → Open Anyway**. When a new version is out, the Mac app tells you and opens the download.
+- 🔒 **Image library update.** A scanned PDF built to attack the JPEG 2000 image decoder could reach it when HARBOUR read the scan; that is fixed. Plus PDF-reader and certificate-list updates.
 
 ### v1.3.30 — 25 October 2026
 

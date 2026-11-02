@@ -10,8 +10,8 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.30-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS%20soon-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
+[![Version](https://img.shields.io/badge/version-1.3.31-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
 
@@ -23,14 +23,14 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 
 | Windows | Linux | macOS |
 |:---:|:---:|:---:|
-| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | *Coming soon* |
-| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | |
+| [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | [**Download .dmg**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.dmg) |
+| [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | Apple Silicon (M1+), macOS 14+ |
 
-> ✅ **v1.3.30 ships on Windows and Linux together**, both built without CI.
+> ✅ **v1.3.31 ships on Windows, Linux and, for the first time, macOS.** The Mac app is not yet signed with an Apple Developer certificate, so the first time you open it macOS stops it: click **Done**, then **System Settings → Privacy & Security → Open Anyway**. After that it opens normally. When a new version is out, the Mac app tells you and opens the download.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🔒 **Now shipping — v1.3.30, a security update.** The **Slack / Teams bot** now only answers messages signed with your Slack signing secret or Teams security token; before, anyone who could reach its address could make it post or answer. It never had access to your documents. **If you use the bot, make sure its secret is saved, or it stops answering after the update** (see the manual's Slack / Teams Bot section). Links opened from the app window now only go to web and email addresses. Previously, v1.3.29: chat searches your own documents again: the **RAG ON** button in RAG / Documents lit up but never reached the chat, so the documents you uploaded there were not searched. They are now, and cited. Your Company Knowledge Base was searched all along. Previously, v1.3.28: a small follow-up for anyone using HARBOUR's API: the project dashboard and the scheduled compliance reports list now answer (both always said "not found"), the project health score and status reports no longer make things up, and time can't be logged against another account's task. Nothing on screen changes. Previously, v1.3.27: two dozen fixes found by filming every feature for the new video series, including a **security fix: whistleblowing reports are now visible to administrators only**. Proposals, the invoice screen, the website receptionist, Word downloads, the podcast player and Ask the Manual now work; Deep Research, the morning briefing and data analysis no longer present made-up content; and the **Slide Generator downloads a PowerPoint file**.
+> 🍎 **Now shipping — v1.3.31: HARBOUR on Mac**, for Apple Silicon Macs (M1 or later) on macOS 14 Sonoma or newer, plus a security update to the library that reads images: a scanned PDF built to attack its JPEG 2000 decoder can no longer do so. Previously, v1.3.30, a security update: The **Slack / Teams bot** now only answers messages signed with your Slack signing secret or Teams security token; before, anyone who could reach its address could make it post or answer. It never had access to your documents. **If you use the bot, make sure its secret is saved, or it stops answering after the update** (see the manual's Slack / Teams Bot section). Links opened from the app window now only go to web and email addresses. Previously, v1.3.29: chat searches your own documents again: the **RAG ON** button in RAG / Documents lit up but never reached the chat, so the documents you uploaded there were not searched. They are now, and cited. Your Company Knowledge Base was searched all along. Previously, v1.3.28: a small follow-up for anyone using HARBOUR's API: the project dashboard and the scheduled compliance reports list now answer (both always said "not found"), the project health score and status reports no longer make things up, and time can't be logged against another account's task. Nothing on screen changes. Previously, v1.3.27: two dozen fixes found by filming every feature for the new video series, including a **security fix: whistleblowing reports are now visible to administrators only**. Proposals, the invoice screen, the website receptionist, Word downloads, the podcast player and Ask the Manual now work; Deep Research, the morning briefing and data analysis no longer present made-up content; and the **Slide Generator downloads a PowerPoint file**.
 
 ---
 
@@ -81,7 +81,7 @@ You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. 
 2. **Download HARBOUR** for your platform (above) and launch it
 3. **It pulls a model on first run** (`llama3.1`) — then you're working, fully offline from there on
 
-> **Requirements:** Windows 10/11 or Linux (Ubuntu 20.04+ / Debian 11+) · 8 GB RAM (16 GB recommended) · ~6 GB disk for the app + model. No internet needed after setup.
+> **Requirements:** Windows 10/11, Linux (Ubuntu 20.04+ / Debian 11+), or macOS 14+ on an Apple Silicon Mac (M1 or later) · 8 GB RAM (16 GB recommended) · ~6 GB disk for the app + model. No internet needed after setup.
 
 ---
 
