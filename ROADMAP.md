@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.31** — released 2 November 2026
+Current version: **v1.3.32** — released 2 November 2026
 *(Windows, Linux and macOS, shipping together)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.31** — released 2 November 2026
 
 ---
 
-## The Platform — v1.3.31
+## The Platform — v1.3.32
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,13 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.32 — 2 November 2026
+
+**Change your own password.**
+
+- 🔑 **Everyone can now change their own password**: ⚙ SYSTEM → Account → Change password (or Ctrl+K). It needs your current password; the new one must be at least 8 characters and different. Changing it signs you out of HARBOUR everywhere else, and the window you used stays signed in. Five wrong attempts in five minutes pause it for five minutes. Single sign-on accounts change their password with their organisation. Until now only an administrator could set a password, so on a shared install the administrator knew everyone's.
+- 🖥 **Server installs** (Docker) can now be delivered as a single ready-built image file, and the outbound-traffic meter no longer counts HARBOUR's own local AI engine.
 
 ### v1.3.31 — 2 November 2026
 

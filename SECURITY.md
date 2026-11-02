@@ -136,7 +136,13 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest update — 2 November 2026 (v1.3.31):** dependency updates held back from the 25 October
+> **Latest update — 2 November 2026 (v1.3.32):** staff can change their own password. Before this,
+> the only way to set a password was an administrator's reset, so on a shared installation the
+> administrator chose, and knew, every user's password. The new change needs the current password,
+> requires at least 8 characters, signs out every other session, is limited to 5 attempts per account
+> per 5 minutes, is recorded in the audit log, and only ever changes the signed-in user's own password.
+>
+> **2 November 2026 (v1.3.31):** dependency updates held back from the 25 October
 > review until each was two weeks old. **Pillow 13.0.0** fixes a heap overflow in the bundled JPEG 2000
 > decoder, which a crafted scanned PDF could reach when HARBOUR reads it; also pypdf and certifi. The
 > first macOS build ships in the same release; it is not yet signed with an Apple Developer certificate.
