@@ -51,8 +51,9 @@ Out of scope:
 ## Supported versions
 
 Security fixes ship in the **latest release**. Please keep your installation up to date:
-the in-app updater pulls the newest version unless it has been switched off or pointed at a
-local update folder, or you can download it from the
+on Windows and Linux the in-app updater pulls the newest version unless it has been switched off
+or pointed at a local update folder; on a Mac, HARBOUR tells you a new version is out and opens
+the download. You can always download it from the
 [Releases page](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest). Older
 versions do not receive backported fixes.
 
