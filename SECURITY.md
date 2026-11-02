@@ -65,7 +65,9 @@ versions do not receive backported fixes.
   tamper-evident audit ledger you can verify independently; secrets are held in an encrypted
   local vault; a prompt-injection firewall and output guardrails sit in front of the model.
 - **Authentication** — token-based auth with password hashing; the API enforces auth on
-  protected routes.
+  protected routes. Optional two-factor codes (TOTP). Each user changes their own password (from
+  v1.3.32; the current password is required and every other session is signed out), so an
+  administrator never needs to know anyone's.
 - **Testing** — the platform receives ongoing internal security review. Every release must pass an automated test gate (including an
   auth-enforcement and route-safety harness) before it can be published, and the codebase now
   receives a **monthly security scan** — static analysis, a dependency-CVE audit, and live
