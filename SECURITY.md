@@ -138,7 +138,13 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest update — 2 November 2026 (v1.3.32):** staff can change their own password. Before this,
+> **Latest update — 9 November 2026 (v1.3.33):** the monthly dependency scan. Upgraded: the PDF
+> reader (three crafted-PDF denial-of-service fixes; seven more follow once those releases are two weeks
+> old, our rule for every upgrade), file locking, OpenTelemetry, DNS and msgpack libraries, Next.js (the
+> web interface is a static export, so its server-side advisories never applied) and the desktop updater.
+> Everything else reported was assessed as unreachable or has no fix yet.
+>
+> **2 November 2026 (v1.3.32):** staff can change their own password. Before this,
 > the only way to set a password was an administrator's reset, so on a shared installation the
 > administrator chose, and knew, every user's password. The new change needs the current password,
 > requires at least 8 characters, signs out every other session, is limited to 5 attempts per account

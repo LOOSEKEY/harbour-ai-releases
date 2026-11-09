@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.32** — released 2 November 2026
-*(Windows, Linux and macOS, shipping together)*
+Current version: **v1.3.33** — released 9 November 2026
+*(Windows and Linux; macOS v1.3.33 follows shortly, Mac stays on v1.3.32 until then)*
 
 ---
 
@@ -20,7 +20,7 @@ Current version: **v1.3.32** — released 2 November 2026
 
 ---
 
-## The Platform — v1.3.32
+## The Platform — v1.3.33
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,13 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog
+
+### v1.3.33 — 9 November 2026
+
+**Security update.**
+
+- 🔒 The libraries HARBOUR is built on are updated from the November security scan. The PDF reader now handles three kinds of deliberately malformed PDF that could keep HARBOUR busy for a long time; the rest of that set follows in the next update. Also updated: file locking, telemetry, DNS and data-format libraries, the web interface's build tools, and the desktop updater. Nothing changes in how you use HARBOUR, and no data was exposed.
+- 🍎 The Mac app for v1.3.33 follows shortly; until then the Mac download is v1.3.32.
 
 ### v1.3.32 — 2 November 2026
 
