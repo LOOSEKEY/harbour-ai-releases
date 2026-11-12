@@ -138,7 +138,17 @@ versions do not receive backported fixes.
 > stayed at v1.3.15 and was unaffected by both faults in a single-user installation; Windows caught
 > up in v1.3.19 on 31 August 2026 and now carries both fixes.
 
-> **Latest update — 9 November 2026 (v1.3.33):** the monthly dependency scan. Upgraded: the PDF
+> **Latest update — 12 November 2026 (v1.3.34):** a deep scan of every signed-in route. Deleting a
+> custom agent erased every user's chat history (and clearing a chat cleared it for everyone); the
+> Computer Operator screen did not apply the role rules or the injection firewall; live-voice and
+> developer-API sessions outlived a disabled account or a password change; reseller client keys and
+> install-wide settings (email, Teams, calendar, phone, WhatsApp, video provider, the egress
+> kill-switch) could be changed by any signed-in account and now need an administrator; project
+> files, device lock/wipe acknowledgements and schedules were not tied to their owner; and the
+> production Docker Compose file left port 8000 published beside the HTTPS proxy. All fixed, each
+> with a regression test. The PDF reader also received the remaining seven crafted-PDF fixes.
+>
+> **9 November 2026 (v1.3.33):** the monthly dependency scan. Upgraded: the PDF
 > reader (three crafted-PDF denial-of-service fixes; seven more follow once those releases are two weeks
 > old, our rule for every upgrade), file locking, OpenTelemetry, DNS and msgpack libraries, Next.js (the
 > web interface is a static export, so its server-side advisories never applied) and the desktop updater.

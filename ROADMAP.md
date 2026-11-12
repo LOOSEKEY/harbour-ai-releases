@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.33** — released 9 November 2026
-*(Windows and Linux; macOS v1.3.33 follows shortly, Mac stays on v1.3.32 until then)*
+Current version: **v1.3.34** — released 12 November 2026
+*(Windows and Linux; macOS v1.3.34 follows shortly, Mac stays on v1.3.32 until then)*
 
 ---
 
@@ -20,7 +20,7 @@ Current version: **v1.3.33** — released 9 November 2026
 
 ---
 
-## The Platform — v1.3.33
+## The Platform — v1.3.34
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -64,12 +64,25 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ## Changelog
 
+### v1.3.34 — 12 November 2026
+
+**Security update — please install.**
+
+- 🛡️ **Deleting a custom agent erased every conversation**, for every account on the install. Fixed: it now removes only your own chats with that agent, and clearing a chat clears only your own messages. History already lost this way cannot be brought back by the update; a backup taken before it happened still has it.
+- 🛡️ The Computer Operator now obeys your role rules and the injection firewall.
+- 🛡️ Disabling an account or changing a password now stops live voice, dictation, shared documents and the developer API at once.
+- 🛡️ Email, Teams, calendar, phone and WhatsApp settings, the video provider key, reseller client keys and the "refuse all external requests" switch now need an administrator. If you are the only user, you are the administrator and nothing changes.
+- 🛡️ Project files, schedules and device lock/wipe commands are tied to the account they belong to.
+- 🐳 Server (Docker) installs: the production file now really closes port 8000. Needs Docker Compose 2.24 or newer.
+- 🔒 The PDF reader handles the remaining seven kinds of deliberately malformed PDF from this month's scan.
+- 🍎 The Mac app for v1.3.34 follows shortly; until then the Mac download is v1.3.32.
+
 ### v1.3.33 — 9 November 2026
 
 **Security update.**
 
 - 🔒 The libraries HARBOUR is built on are updated from the November security scan. The PDF reader now handles three kinds of deliberately malformed PDF that could keep HARBOUR busy for a long time; the rest of that set follows in the next update. Also updated: file locking, telemetry, DNS and data-format libraries, the web interface's build tools, and the desktop updater. Nothing changes in how you use HARBOUR, and no data was exposed.
-- 🍎 The Mac app for v1.3.33 follows shortly; until then the Mac download is v1.3.32.
+- 🍎 No Mac build of v1.3.33; the Mac download stayed on v1.3.32.
 
 ### v1.3.32 — 2 November 2026
 
