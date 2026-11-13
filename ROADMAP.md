@@ -1,7 +1,7 @@
 # HARBOUR AI — Public Roadmap
 
 Current version: **v1.3.34** — released 12 November 2026
-*(Windows and Linux; macOS v1.3.34 follows shortly, Mac stays on v1.3.32 until then)*
+*(Windows and Linux; macOS added 13 November 2026)*
 
 ---
 
@@ -75,7 +75,7 @@ cloud, no telemetry, no subscription. What's in the box today:
 - 🛡️ Project files, schedules and device lock/wipe commands are tied to the account they belong to.
 - 🐳 Server (Docker) installs: the production file now really closes port 8000. Needs Docker Compose 2.24 or newer.
 - 🔒 The PDF reader handles the remaining seven kinds of deliberately malformed PDF from this month's scan.
-- 🍎 The Mac app for v1.3.34 follows shortly; until then the Mac download is v1.3.32.
+- 🍎 The Mac app for v1.3.34 was added on 13 November 2026 (Apple Silicon, macOS 14+). To update from v1.3.32: open the new .dmg and drag HARBOUR AI into Applications, replacing the old copy; if macOS stops it, use Open Anyway as before.
 
 ### v1.3.33 — 9 November 2026
 
