@@ -83,7 +83,7 @@ once, when you activate it, and never again. Nothing on your machine depends on 
 ### What it is now.
 
 What began as a private experiment at home is now a full local AI **platform**: five specialist
-agents and 120+ business tools, all running entirely on your own computer. No cloud. No telemetry.
+agents and 150+ business tools, all running entirely on your own computer. No cloud. No telemetry.
 No subscription. Your data never leaves your machine.
 
 And it goes further than "trust me." Every answer HARBOUR gives comes with a cryptographically

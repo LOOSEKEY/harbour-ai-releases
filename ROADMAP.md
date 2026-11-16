@@ -41,7 +41,7 @@ cloud, no telemetry, no subscription. What's in the box today:
 - **Integrations** — Xero / QuickBooks / Sage, HMRC MTD, Cloud Drive Sync (OneDrive, SharePoint, Google Drive), Enterprise SSO (LDAP + SAML 2.0), MCP. Bank transaction analysis and NHS FHIR records work on local data; neither connects to banks or NHS systems
 - **Productivity** — Company Brain knowledge graph, meeting intelligence, workflow recorder, voice & vision
 - **OpenAI-compatible REST API** — plug HARBOUR AI into your existing tools, all running locally
-- **Deployment options** — install on your own Windows/Linux machines, or run it as the **HARBOUR AI Box**: a turnkey appliance (HARBOUR OS, Ubuntu-based) we or a partner pre-configure and ship to your organisation — ideal for NHS and other regulated environments. Self-install HARBOUR OS image available to IT teams on request.
+- **Deployment options** — install on your own Windows, Linux or Mac machines, or run it as the **HARBOUR AI Box**: a turnkey appliance (HARBOUR OS, Ubuntu-based) we or a partner pre-configure and ship to your organisation — ideal for NHS and other regulated environments. Self-install HARBOUR OS image available to IT teams on request.
 
 ---
 

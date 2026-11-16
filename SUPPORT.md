@@ -47,8 +47,9 @@ what you have already tried saves a round trip.
 A fix is published as a new release. How it then reaches a machine depends on how that
 machine gets updates (⚙ SYSTEM → Software updates):
 
-- **Automatic (the default)** — the desktop app downloads it and installs it on the next
-  restart.
+- **Automatic (the default)** — on Windows and Linux the desktop app downloads it and
+  installs it on the next restart. On a Mac, HARBOUR tells you a new version is out and opens
+  the download; drag the new copy into Applications to replace the old one.
 - **From an update folder on your network** — your IT partner puts the new release in that
   folder when they have approved it.
 - **By hand** — someone runs the new installer, from a USB drive for example.
