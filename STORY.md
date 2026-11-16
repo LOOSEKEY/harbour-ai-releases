@@ -6,8 +6,8 @@
 
 These are the questions people ask me most, answered up front.
 
-- **Who's behind it?** I'm Gregory Moore. I grew up in Birmingham and live in Rugby, in the
-  middle of England. I build the software myself and sell it straight to the people who use it.
+- **Who's behind it?** I'm Gregory Moore. I grew up in Birmingham, UK, and have lived in
+  Rugby, in the middle of England, for the past ten years. I build the software myself and sell it straight to the people who use it.
 - **Is it just one person?** No. My daughter, **Nevaeh Moore**, works with me side by side. She knows
   HARBOUR AI as well as I do, and she answers calls and emails when I'm not around.
 - **What happens if you disappear?** Your copy keeps working. Once a bought licence key is activated,
@@ -62,6 +62,9 @@ Software, mostly, made to order for whoever asked. That work has taken me to pla
 never will see. I've also built server rooms underground, for private clients and businesses alike.
 When the machines that hold everything sit below ground, you learn very quickly what "keeping data
 safe" really means, and you never forget it.
+
+For the past ten years I've lived in Rugby, building apps and websites the old way for the people
+who ask for them.
 
 The *syntax* changes, the *tools* change, the trends come and go. But the way of thinking doesn't
 expire: break the problem down, work out what's really going wrong, and be stubborn enough to keep
