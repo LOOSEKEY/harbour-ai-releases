@@ -116,7 +116,7 @@ From here, development is deliberately steady: **security updates, dependency pa
 
 ## Who's behind HARBOUR
 
-HARBOUR AI is built by **Gregory Moore**, who grew up in Birmingham and works from Rugby, UK. He has spent his working life building software privately for people who need it, and has built underground server rooms for private clients and businesses. His daughter, **Nevaeh Moore**, works with him side by side and answers calls and email when he's away.
+HARBOUR AI is built by **Gregory Moore**, who grew up in Birmingham and works from Rugby, UK. He has been coding since the nineties, right up to today, alongside plenty of jobs away from computers. All the way through, he has built software privately for people who need it, and he has built underground server rooms for private clients and businesses. His daughter, **Nevaeh Moore**, works with him side by side and answers calls and email when he's away.
 
 First released in April 2026 and launched publicly on 12 May 2026. A company uses it in the UK and in Germany, alongside a growing number of people running it on their own. Once a bought licence key is activated, HARBOUR never needs to check in with us again, so your copy keeps working whatever happens. Contact: Gregorymoores@proton.me. **[Read the full story →](STORY.md)**
 

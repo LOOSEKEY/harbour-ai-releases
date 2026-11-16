@@ -52,11 +52,12 @@ be handy if it could also…" at a time. The list grew. The tool grew. And someh
 
 ### Where I come from.
 
-I grew up in Birmingham, and I learnt to code in the nineties, as a teenager, about thirty years
-ago now. The world has changed beyond recognition since then: new languages, new tools, entirely
-new ways of building things.
+I grew up in Birmingham, and I started learning to code in the nineties. I've never stopped since:
+from then right up to today, I've kept at it. The world has changed beyond recognition in that time,
+with new languages, new tools and entirely new ways of building things.
 
-Most of my working life since has been spent building things privately for people who need them.
+It was never a straight line, mind. Along the way I've done plenty of jobs that had nothing to do with
+computers. But all the way through, I've built things privately for people who needed them.
 Software, mostly, made to order for whoever asked. That work has taken me to places most people
 never will see. I've also built server rooms underground, for private clients and businesses alike.
 When the machines that hold everything sit below ground, you learn very quickly what "keeping data
@@ -64,7 +65,7 @@ safe" really means, and you never forget it.
 
 The *syntax* changes, the *tools* change, the trends come and go. But the way of thinking doesn't
 expire: break the problem down, work out what's really going wrong, and be stubborn enough to keep
-at it until it gives in. That part never left. Everything else, I relearned as I went.
+at it until it gives in. That part never left. Everything else, I picked up as I went.
 
 ### It isn't just me.
 
