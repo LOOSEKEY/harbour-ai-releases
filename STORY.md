@@ -16,7 +16,7 @@ These are the questions people ask me most, answered up front.
 - **How long has it been going?** The first release went out in April 2026 and HARBOUR launched
   publicly on 12 May 2026. It has had more than 160 releases since, and it gets a security scan
   every month.
-- **Who uses it?** I can't name customers. A company uses it here in the UK and in Germany, and
+- **Who uses it?** I can't name customers. Two companies use it, one here in the UK and one in Germany, and
   more and more people are using it on their own.
 - **How do I reach you?** Email **Gregorymoores@proton.me**, or join the
   [community Discord](https://harbour-ai.co.uk/discord).
@@ -87,7 +87,7 @@ And it goes further than "trust me." Every answer HARBOUR gives comes with a cry
 signed receipt, proof of which model produced it and when, backed by a tamper-evident audit log
 you can verify yourself, independently, offline. Private AI you can actually stand behind.
 
-It's used by a company here in the UK and in Germany, and by a growing number of people running it
+It's used by two companies, one here in the UK and one in Germany, and by a growing number of people running it
 on their own. It's grown so much that, honestly, there are tools in there I've never even used
 myself. But every one of them is there because, at some point, someone wanted it.
 
