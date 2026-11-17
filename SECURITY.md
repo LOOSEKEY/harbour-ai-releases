@@ -76,14 +76,12 @@ versions do not receive backported fixes.
   upstream fixes land; each monthly scan brings every dependency with an available fix up to
   date. **Most recent scan: 12 November 2026.**
 
-> **Latest scan — 12 November 2026 (v1.3.34):** a deep scan of every signed-in route. Deleting a
-> custom agent erased every user's chat history (and clearing a chat cleared it for everyone); the
-> Computer Operator screen did not apply the role rules or the injection firewall; live-voice and
-> developer-API sessions outlived a disabled account or a password change; reseller client keys and
-> install-wide settings (email, Teams, calendar, phone, WhatsApp, video provider, the egress
-> kill-switch) could be changed by any signed-in account and now need an administrator; project
-> files, device lock/wipe acknowledgements and schedules were not tied to their owner; and the
-> production Docker Compose file left port 8000 published beside the HTTPS proxy. All fixed, each
-> with a regression test. The PDF reader also received the remaining seven crafted-PDF fixes.
+> **Latest — 17 November 2026 (v1.3.35):** a document-indexing route accepted any file inside
+> HARBOUR's own data folder, which is also where the key that signs sign-ins is kept, so a signed-in
+> account calling the route directly could read that key and act as an administrator; it now accepts
+> only the account's own uploaded documents. Each account's uploaded documents are now stored
+> separately: a same-named upload from another account could replace an original, and re-indexing
+> could then use the other account's file. Both fixed with regression tests and proven in the
+> packaged build. The most recent full scan remains 12 November 2026.
 
 Thank you for helping keep HARBOUR AI and its users safe.

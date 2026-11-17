@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.34** — released 12 November 2026
+Current version: **v1.3.35** — released 17 November 2026
 *(Windows and Linux; macOS added 13 November 2026)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.34** — released 12 November 2026
 
 ---
 
-## The Platform — v1.3.34
+## The Platform — v1.3.35
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -64,18 +64,13 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ## Changelog — latest release
 
-### v1.3.34 — 12 November 2026
+### v1.3.35 — 17 November 2026
 
 **Security update — please install.**
 
-- 🛡️ **Deleting a custom agent erased every conversation**, for every account on the install. Fixed: it now removes only your own chats with that agent, and clearing a chat clears only your own messages. History already lost this way cannot be brought back by the update; a backup taken before it happened still has it.
-- 🛡️ The Computer Operator now obeys your role rules and the injection firewall.
-- 🛡️ Disabling an account or changing a password now stops live voice, dictation, shared documents and the developer API at once.
-- 🛡️ Email, Teams, calendar, phone and WhatsApp settings, the video provider key, reseller client keys and the "refuse all external requests" switch now need an administrator. If you are the only user, you are the administrator and nothing changes.
-- 🛡️ Project files, schedules and device lock/wipe commands are tied to the account they belong to.
-- 🐳 Server (Docker) installs: the production file now really closes port 8000. Needs Docker Compose 2.24 or newer.
-- 🔒 The PDF reader handles the remaining seven kinds of deliberately malformed PDF from this month's scan.
-- 🍎 The Mac app for v1.3.34 was added on 13 November 2026 (Apple Silicon, macOS 14+). To update from v1.3.32: open the new .dmg and drag HARBOUR AI into Applications, replacing the old copy; if macOS stops it, use Open Anyway as before.
+- 🛡️ A document-indexing route accepted any file in HARBOUR's own data folder, where the key that signs sign-ins is kept, so a signed-in account calling it directly could read that key and act as an administrator. It now accepts only the account's own uploaded documents.
+- 🛡️ Each account's documents under RAG / Documents are kept in a folder of their own: a same-named upload from another account can no longer replace yours, re-indexing never uses another account's file, and removing a document deletes the stored file. If you are the only user, nothing changes; on an install with several accounts, documents added before this version may ask to be uploaded again when you press RE-INDEX NOW.
+- 🍎 Mac: this release carries the v1.3.34 Mac app until the 1.3.35 Mac build is ready.
 
 ---
 
