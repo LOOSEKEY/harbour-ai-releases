@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.35-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.36-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | [**Download .dmg**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.dmg) |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | Apple Silicon (M1+), macOS 14+ |
 
-> ✅ **v1.3.35 ships on Windows and Linux; the Mac download is v1.3.34** until the 1.3.35 Mac build is ready. The Mac app is not yet signed with an Apple Developer certificate, so the first time you open it macOS stops it: click **Done**, then **System Settings → Privacy & Security → Open Anyway**. After that it opens normally. When a new version is out, the Mac app tells you and opens the download.
+> ✅ **v1.3.36 ships on Windows and Linux; the Mac download is v1.3.34** (the classic layout) until the 1.3.36 Mac build is ready. The Mac app is not yet signed with an Apple Developer certificate, so the first time you open it macOS stops it: click **Done**, then **System Settings → Privacy & Security → Open Anyway**. After that it opens normally. When a new version is out, the Mac app tells you and opens the download.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🛡️ **Now shipping — v1.3.35: a security update, please install it.** A document-indexing route accepted any file in HARBOUR's own data folder, which is also where the key that signs everyone's sign-ins is kept: a signed-in account that called it directly could read that key and act as an administrator. It now accepts only the account's own uploaded documents. Each account's documents under RAG / Documents are also now kept in a folder of their own, so two people uploading a file with the same name no longer replace each other's copy, and removing a document deletes the stored file. If you are the only user, nothing changes. Windows and Linux update themselves: restart HARBOUR.
+> 🎨 **Now shipping — v1.3.36: a new layout.** New installs open in a calmer layout, in day mode: a sidebar of places (Chats, Documents & knowledge, Research, Meetings, Inbox & clients, Business tools, Automations, Create), each opening as a page; Settings at the bottom with a Health page (self-test, backups, updates); the assistants and what's switched on in a panel on the right; a chat with bigger text. Everything you could do before is still there under the same names, and the user manual and onboarding videos are redone for it. **Already using HARBOUR? Nothing changes until you choose:** a bar offers the new layout once, and Settings › Appearance switches back. Windows and Linux update themselves: restart HARBOUR.
 
 ---
 
