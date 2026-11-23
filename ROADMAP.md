@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.38** — released 23 November 2026
+Current version: **v1.3.39** — released 23 November 2026
 *(Windows and Linux; macOS added 13 November 2026)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.38** — released 23 November 2026
 
 ---
 
-## The Platform — v1.3.38
+## The Platform — v1.3.39
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,18 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog — latest release
+
+### v1.3.39 — 23 November 2026
+
+**MSP tenants keep client firms apart.**
+
+- 🏢 On an install that serves several client organisations, each one's company knowledge, phone calls, WhatsApp messages, consent register, signed documents and chargeback departments now stay with that organisation. Before, staff in one tenant could see another's.
+- 🔐 A tenant invite can give the user or power user role, never administrator of the whole install.
+- 👌 Installs without tenants work exactly as before.
+- 🔧 Fixed: the cashflow forecast (it failed with an error), the daily briefing's outstanding invoices (always "Data unavailable"), and alerts from six features (cashflow, pricing scans, client sentiment, regulatory watch, scheduled compliance reports, knowledge decay), which failed the moment they had something to report.
+- 🍎 Mac: this release carries the v1.3.34 Mac app until the next Mac build is ready.
+
+---
 
 ### v1.3.38 — 23 November 2026
 
