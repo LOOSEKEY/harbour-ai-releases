@@ -15,7 +15,7 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
 
-![HARBOUR AI — the new layout: a sidebar of places, the conversation in the middle and the assistants on the right; Sapphire drafting a client letter from the firm's own documents, all on your own machine](images/harbour-hero.png)
+![HARBOUR AI — the new layout in day mode: a sidebar of places, the conversation in the middle and the assistants on the right; Sapphire drafting a client welcome email from the firm's own client care template, all on your own machine](images/harbour-hero.png)
 
 ---
 
