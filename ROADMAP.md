@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.36** — released 17 November 2026
+Current version: **v1.3.37** — released 23 November 2026
 *(Windows and Linux; macOS added 13 November 2026)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.36** — released 17 November 2026
 
 ---
 
-## The Platform — v1.3.36
+## The Platform — v1.3.37
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -63,6 +63,20 @@ cloud, no telemetry, no subscription. What's in the box today:
 ---
 
 ## Changelog — latest release
+
+### v1.3.37 — 23 November 2026
+
+**New colours and fixes for the new layout.**
+
+- 🎨 New colours: navy at night and blue-white by day, a brighter pink, and the four assistants in colours of their own (Bella cyan, Sapphire violet, Jade gold, Ellie orange), so none of them looks like a success or error message. The new colours meet the WCAG AA contrast standard. The classic layout is unchanged.
+- 🧭 A lighter assistants panel: one row per assistant, with its settings behind its name. Emma's on/off switch is back.
+- 🌗 A sun/moon button in the chat bar switches day and night in one click.
+- 🔗 Share shows the link with a Copy link button, and a failed share can no longer copy a broken link.
+- 👥 Work together shows that it's on and who is in the chat; whoever joins second now sees who was already there.
+- 🔧 The Next.js interface framework is updated to 16.4.6. Its advisories concern Next.js servers; HARBOUR doesn't run one, so they never applied.
+- 🍎 Mac: this release carries the v1.3.34 Mac app until the next Mac build is ready.
+
+---
 
 ### v1.3.36 — 17 November 2026
 
