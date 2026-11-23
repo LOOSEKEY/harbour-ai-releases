@@ -14,7 +14,7 @@ These are the questions people ask me most, answered up front.
   HARBOUR never needs to check in with us again. It runs on your machine with the internet unplugged,
   and a backup restores onto a new machine, licence included, with no internet at all.
 - **How long has it been going?** The first release went out in April 2026 and HARBOUR launched
-  publicly on 12 May 2026. It has had more than 160 releases since, and it gets a security scan
+  publicly on 12 May 2026. It has had about 180 releases since, and it gets a security scan
   every month.
 - **Who uses it?** I can't name customers. Two companies use it, one here in the UK and one in Germany, and
   more and more people are using it on their own.

@@ -76,56 +76,6 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ---
 
-### v1.3.39 — 23 November 2026
-
-**MSP tenants keep client firms apart.**
-
-- 🏢 On an install that serves several client organisations, each one's company knowledge, phone calls, WhatsApp messages, consent register, signed documents and chargeback departments now stay with that organisation. Before, staff in one tenant could see another's.
-- 🔐 A tenant invite can give the user or power user role, never administrator of the whole install.
-- 👌 Installs without tenants work exactly as before.
-- 🔧 Fixed: the cashflow forecast (it failed with an error), the daily briefing's outstanding invoices (always "Data unavailable"), and alerts from six features (cashflow, pricing scans, client sentiment, regulatory watch, scheduled compliance reports, knowledge decay), which failed the moment they had something to report.
-- 🍎 Mac: this release carries the v1.3.34 Mac app until the next Mac build is ready.
-
----
-
-### v1.3.38 — 23 November 2026
-
-**Every panel matches the new layout.**
-
-- 🎨 In the new layout, the panels and menus that open from the sidebar, Settings and Ctrl+K (admin, Trust, Tenants, integrations, the business tools and the rest) now use readable text, sentence-case labels, proper inputs, dropdowns and buttons, and the new colours, in day and night.
-- 🧩 The panels that open above the chat (Scheduler, Jobs, Create agent, Usage, Public API, Plugins, Vision) match too.
-- 👌 The classic layout is unchanged.
-- 🍎 Mac: this release carries the v1.3.34 Mac app until the next Mac build is ready.
-
----
-
-### v1.3.37 — 23 November 2026
-
-**New colours and fixes for the new layout.**
-
-- 🎨 New colours: navy at night and blue-white by day, a brighter pink, and the four assistants in colours of their own (Bella cyan, Sapphire violet, Jade gold, Ellie orange), so none of them looks like a success or error message. The new colours meet the WCAG AA contrast standard. The classic layout is unchanged.
-- 🧭 A lighter assistants panel: one row per assistant, with its settings behind its name. Emma's on/off switch is back.
-- 🌗 A sun/moon button in the chat bar switches day and night in one click.
-- 🔗 Share shows the link with a Copy link button, and a failed share can no longer copy a broken link.
-- 👥 Work together shows that it's on and who is in the chat; whoever joins second now sees who was already there.
-- 🔧 The Next.js interface framework is updated to 16.4.6. Its advisories concern Next.js servers; HARBOUR doesn't run one, so they never applied.
-- 🍎 Mac: this release carries the v1.3.34 Mac app until the next Mac build is ready.
-
----
-
-### v1.3.36 — 17 November 2026
-
-**A new layout.**
-
-- 🎨 New installs open in the new layout, in day mode: a sidebar of places, each opening as a page (Documents & knowledge as one page with the firm's documents, your documents and memory; Business tools with your sector's tools at the top); Settings with a Health page; the assistants, Emma and what's switched on in a side panel; a calmer chat.
-- 👋 Existing installs keep their layout; a bar offers the new one once, and Settings › Appearance switches back at any time.
-- 📖 The user manual and all 25 onboarding videos are redone for the new layout.
-- 🔧 The Tactical Monitor no longer says "1 MODELS" when the local AI engine isn't running.
-- 🐳 Server (Docker) installs: optional database connection reuse for many people at once, off by default (`HARBOUR_DB_REUSE=1`).
-- 🍎 Mac: this release carries the v1.3.34 Mac app until the 1.3.36 Mac build is ready.
-
----
-
 *For support or enterprise enquiries: Gregorymoores@proton.me*  
 *Website: [harbour-ai.co.uk](https://harbour-ai.co.uk)*  
 *Community: [Discord](https://harbour-ai.co.uk/discord)*

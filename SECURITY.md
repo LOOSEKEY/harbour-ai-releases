@@ -59,8 +59,9 @@ versions do not receive backported fixes.
 
 ## Security posture (overview)
 
-- **Local-first by design** — model inference and your data stay on your own device; nothing
-  is sent to a cloud service.
+- **Local-first by design** — model inference and your data stay on your own device. By
+  default nothing is sent to a cloud service; online features (web search, a cloud AI model with
+  your own key, email) are off until someone switches them on.
 - **Trust Layer** — every AI response carries an Ed25519-signed receipt, recorded in a
   tamper-evident audit ledger you can verify independently; secrets are held in an encrypted
   local vault; a prompt-injection firewall and output guardrails sit in front of the model.
@@ -76,12 +77,15 @@ versions do not receive backported fixes.
   upstream fixes land; each monthly scan brings every dependency with an available fix up to
   date. **Most recent scan: 12 November 2026.**
 
-> **Latest — 17 November 2026 (v1.3.35):** a document-indexing route accepted any file inside
-> HARBOUR's own data folder, which is also where the key that signs sign-ins is kept, so a signed-in
-> account calling the route directly could read that key and act as an administrator; it now accepts
-> only the account's own uploaded documents. Each account's uploaded documents are now stored
-> separately: a same-named upload from another account could replace an original, and re-indexing
-> could then use the other account's file. Both fixed with regression tests and proven in the
-> packaged build. The most recent full scan remains 12 November 2026.
+> **Latest — 23 November 2026 (v1.3.39 and v1.3.40):** on an install serving several client
+> organisations (MSP tenants), people in one tenant could see another tenant's company documents,
+> call and message logs, consent records and signed-document records; each organisation's shared
+> information is now kept to that organisation, and a tenant invite can no longer grant administrator
+> rights. The phone receptionist's Twilio webhooks accepted unsigned requests, so anyone who could
+> reach a server install could add fake call records; every request must now carry Twilio's
+> signature. Connecting a cloud drive, which adds files to company knowledge, now needs an
+> administrator or reviewer, as adding company documents directly always has. The kill-switch that
+> refuses outbound requests now stays on after a restart. Each fixed with regression tests and
+> checked in the packaged builds. The most recent full scan remains 12 November 2026.
 
 Thank you for helping keep HARBOUR AI and its users safe.
