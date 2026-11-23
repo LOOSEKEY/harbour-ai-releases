@@ -10,7 +10,7 @@
 
 A complete AI workforce — five specialist agents and 150+ business tools — that runs **entirely on your own computer**. No cloud. No subscription. No data leaving your machine. And now, provably so: every answer carries a cryptographic receipt you can verify yourself.
 
-[![Version](https://img.shields.io/badge/version-1.3.39-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.3.40-16a34a?style=flat-square)](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%C2%B7%20Windows%20%C2%B7%20macOS-lightgrey?style=flat-square)](#-download--free-14-day-trial-no-card)
 [![100% Local](https://img.shields.io/badge/inference-100%25%20local-16a34a?style=flat-square)](https://harbour-ai.co.uk)
 [![Website](https://img.shields.io/badge/harbour--ai.co.uk-purple?style=flat-square)](https://harbour-ai.co.uk)
@@ -26,11 +26,11 @@ A complete AI workforce — five specialist agents and 150+ business tools — t
 | [**Download installer (.exe)**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Setup.exe) | [**Download AppImage**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.AppImage) | [**Download .dmg**](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.dmg) |
 | [Portable .exe](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI-Portable.exe) | [.deb package](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest/download/HARBOUR-AI.deb) | Apple Silicon (M1+), macOS 14+ |
 
-> ✅ **v1.3.39 ships on Windows and Linux; the Mac download is v1.3.34** (the classic layout) until the next Mac build is ready. The Mac app is not yet signed with an Apple Developer certificate, so the first time you open it macOS stops it: click **Done**, then **System Settings → Privacy & Security → Open Anyway**. After that it opens normally. When a new version is out, the Mac app tells you and opens the download.
+> ✅ **v1.3.40 ships on Windows and Linux; the Mac download is v1.3.34** (the classic layout) until the next Mac build is ready. The Mac app is not yet signed with an Apple Developer certificate, so the first time you open it macOS stops it: click **Done**, then **System Settings → Privacy & Security → Open Anyway**. After that it opens normally. When a new version is out, the Mac app tells you and opens the download.
 
 You'll also need [**Ollama**](https://ollama.com) — the free local AI engine. Two minutes, one command ([3-step setup below](#-get-running-in-3-steps)). *[Browse all releases →](https://github.com/LOOSEKEY/harbour-ai-releases/releases/latest)*
 
-> 🏢 **Now shipping — v1.3.39: MSP tenants keep client firms apart.** On an install that serves several client organisations, each one's company knowledge, phone calls, WhatsApp messages, consent register and signed documents now stay with that organisation, and a tenant invite can't make anyone an administrator of the whole install. Installs without tenants work exactly as before. Also fixed: the cashflow forecast and the daily briefing's outstanding invoices. Windows and Linux update themselves: restart HARBOUR.
+> 📞 **Now shipping — v1.3.40: the phone receptionist works, plus security fixes.** The Phone Receptionist panel can now be switched on (it couldn't before) and HARBOUR checks every call really comes from Twilio. Cloud Drive Sync needs an administrator or reviewer, and the kill-switch that refuses outbound requests stays on after a restart. Also fixed: the daily briefing's renewals and at-risk clients, and the cashflow forecast's dates. Windows and Linux update themselves: restart HARBOUR.
 
 ---
 
