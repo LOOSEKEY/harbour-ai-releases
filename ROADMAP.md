@@ -1,6 +1,6 @@
 # HARBOUR AI — Public Roadmap
 
-Current version: **v1.3.40** — released 23 November 2026
+Current version: **v1.3.41** — released 24 November 2026
 *(Windows and Linux; macOS added 13 November 2026)*
 
 ---
@@ -20,7 +20,7 @@ Current version: **v1.3.40** — released 23 November 2026
 
 ---
 
-## The Platform — v1.3.40
+## The Platform — v1.3.41
 
 HARBOUR AI is a private, multi-agent AI platform that runs **entirely on your own hardware** — no
 cloud, no telemetry, no subscription. What's in the box today:
@@ -64,14 +64,12 @@ cloud, no telemetry, no subscription. What's in the box today:
 
 ## Changelog — latest release
 
-### v1.3.40 — 23 November 2026
+### v1.3.41 — 24 November 2026
 
-**The phone receptionist works, plus security fixes.**
+**Scanned invoices keep their totals, and Contract Compare reads both documents.**
 
-- 📞 The Phone Receptionist panel saves your Twilio details and has an Answer calls switch; before, it couldn't be switched on. Every call is checked as really coming from Twilio.
-- 🔐 Cloud Drive Sync needs an administrator or reviewer, because synced files go into company knowledge.
-- 🛑 The kill-switch that refuses outbound requests stays on after a restart.
-- 🔧 Fixed: the daily briefing's renewals and at-risk clients, the cashflow forecast's dates and sums, and three screens that ignored synced accounting data.
+- 🧾 A photographed or scanned invoice is no longer saved at £0 or with its totals mixed up with the line items: HARBOUR keeps a subtotal, VAT and total only if they add up and are printed on the invoice.
+- 📑 Contract Compare works out the clauses only in A or only in B from the two documents, clause by clause; before, it could call a clause missing when both had it.
 - 🍎 Mac: this release carries the v1.3.34 Mac app until the next Mac build is ready.
 
 ---
